@@ -1,0 +1,15 @@
+<template name="messagesList">
+	<div class="messages">
+		{{#each messages}}
+			{{> messageItem}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="messageItem">
+	<div class="message">
+		<div class="message-content">
+			<h3>{{author}}: </h3><span>{{message}}</span>
+		</div>
+	</div>
+</template>
