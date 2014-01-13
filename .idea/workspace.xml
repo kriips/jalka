@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da26dd8-e155-4583-a89b-71e09fd5ee0c" name="Default" comment="" />
+    <list default="true" id="6da26dd8-e155-4583-a89b-71e09fd5ee0c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/fixtures.js" afterPath="$PROJECT_DIR$/server/fixtures.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/home.html" afterPath="$PROJECT_DIR$/client/views/application/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/messages_list.html" afterPath="$PROJECT_DIR$/client/views/application/messages_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/messages_list.js" afterPath="$PROJECT_DIR$/client/views/application/messages_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="jalka.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,76 +30,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/application/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/application/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/application/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="10" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="810">
+            <state line="15" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <file leaf-file-name="messages_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="8" column="56" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_list.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="3" selection-start="412" selection-end="412" vertical-scroll-proportion="0.28619528" vertical-offset="0" max-vertical-offset="891">
               <folding>
-                <element signature="e#95#141#0" expanded="true" />
+                <element signature="e#54#84#0" expanded="true" />
+                <element signature="e#149#408#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="16" selection-start="780" selection-end="780" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="smart.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="81" selection-start="286" selection-end="286" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/helpers/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="963">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loading.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/includes/loading.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="11" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -106,15 +70,17 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/views/messages_list.html" />
         <option value="$PROJECT_DIR$/collections/messages.js" />
-        <option value="$PROJECT_DIR$/server/fixtures.js" />
-        <option value="$PROJECT_DIR$/client/views/application/messages_list.js" />
-        <option value="$PROJECT_DIR$/client/views/application/messages_list.html" />
         <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/views/home.html" />
@@ -126,6 +92,10 @@
         <option value="$PROJECT_DIR$/client/views/includes/header.html" />
         <option value="$PROJECT_DIR$/smart.json" />
         <option value="$PROJECT_DIR$/client/helpers/config.js" />
+        <option value="$PROJECT_DIR$/server/fixtures.js" />
+        <option value="$PROJECT_DIR$/client/views/application/home.html" />
+        <option value="$PROJECT_DIR$/client/views/application/messages_list.html" />
+        <option value="$PROJECT_DIR$/client/views/application/messages_list.js" />
       </list>
     </option>
   </component>
@@ -135,7 +105,7 @@
     <option name="width" value="1279" />
     <option name="height" value="1414" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -221,6 +191,46 @@
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -247,11 +257,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -324,6 +334,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6da26dd8-e155-4583-a89b-71e09fd5ee0c" name="Default" comment="" />
@@ -339,15 +366,16 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27716994" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27716994" sideWeight="0.49960908" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32968637" sideWeight="0.50039095" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32968637" sideWeight="0.49960908" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16810007" sideWeight="0.72283006" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16810007" sideWeight="0.67031366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -364,14 +392,25 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="submitting messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="submitting messages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/fixtures.js">
+    <entry file="file://$PROJECT_DIR$/client/helpers/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="200" selection-end="200" vertical-scroll-proportion="0.12151215" vertical-offset="0" max-vertical-offset="1111" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/includes/loading.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="11" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/messages.js">
@@ -386,42 +425,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="18" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="272" selection-end="272" vertical-scroll-proportion="0.13646702" vertical-offset="0" max-vertical-offset="1319">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding>
-            <element signature="e#95#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="10" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/includes/loading.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
+        <state line="2" column="11" selection-start="51" selection-end="51" vertical-scroll-proportion="0.028142588" vertical-offset="0" max-vertical-offset="1066">
           <folding />
         </state>
       </provider>
@@ -435,21 +446,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="195">
+        <state line="1" column="14" selection-start="36" selection-end="36" vertical-scroll-proportion="0.013774104" vertical-offset="0" max-vertical-offset="1089">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.10781671" vertical-offset="0" max-vertical-offset="1113">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="780" selection-end="780" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
+        <state line="20" column="16" selection-start="780" selection-end="780" vertical-scroll-proportion="0.2754821" vertical-offset="0" max-vertical-offset="1089">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smart.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="81" selection-start="286" selection-end="286" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
+        <state line="9" column="81" selection-start="286" selection-end="286" vertical-scroll-proportion="0.12396694" vertical-offset="0" max-vertical-offset="1089">
           <folding />
         </state>
       </provider>
@@ -458,6 +476,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="963">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="34" selection-start="195" selection-end="195" vertical-scroll-proportion="0.094339624" vertical-offset="0" max-vertical-offset="1113">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="56" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="412" selection-end="412" vertical-scroll-proportion="0.28619528" vertical-offset="0" max-vertical-offset="891">
+          <folding>
+            <element signature="e#54#84#0" expanded="true" />
+            <element signature="e#149#408#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

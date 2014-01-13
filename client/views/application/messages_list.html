@@ -4,12 +4,24 @@
 			{{> messageItem}}
 		{{/each}}
 	</div>
+	<form class="main">
+		<div>
+			<textarea class="form-control" rows="3" name="message"></textarea>
+		</div>
+		<div class="bs-example">
+			<p>
+				<input type="submit" class="btn btn-primary pull-right" value="Pane teele" />
+			</p>
+		</div>
+	</form>
 </template>
 
 <template name="messageItem">
-	<div class="message">
+	<div class="message well">
 		<div class="message-content">
-			<h3>{{author}}: </h3><span>{{message}}</span>
+			<span>{{timestamp}}</span>
+			<h3>{{author}}: </h3>
+			<span>{{message}}</span>
 		</div>
 	</div>
 </template>
