@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-insecure
 preserve-inputs
 less
 jquery
@@ -13,3 +12,5 @@ accounts-password
 accounts-ui-bootstrap-3
 accounts-facebook
 accounts-google
+moment
+errors

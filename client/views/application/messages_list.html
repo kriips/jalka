@@ -19,8 +19,8 @@
 <template name="messageItem">
 	<div class="message well">
 		<div class="message-content">
-			<span>{{timestamp}}</span>
-			<h3>{{author}}: </h3>
+			<span>{{dateFormat timestamp format="YYYY-MM-DD HH:mm:ss"}}</span>
+			<h4>{{author}}: </h4>
 			<span>{{message}}</span>
 		</div>
 	</div>
