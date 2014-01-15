@@ -1,0 +1,17 @@
+<template name="chart">
+	{{#each allUsers}}
+		{{> user}}
+	{{/each}}
+</template>
+
+<template name="user">
+	{{#if currentUser}}
+		<span class="label label-warning">{{username}}</span>
+	{{else}}
+		{{#if status.online}}
+			<span class="label label-success">{{username}}</span>
+		{{else}}
+			<span class="label label-default">{{username}}</span>
+		{{/if}}
+	{{/if}}
+</template>

@@ -14,7 +14,8 @@
       },
       "bootstrap-3": {},
       "moment": {},
-      "errors": {}
+      "errors": {},
+      "user-status": {}
     },
     "packages": {
       "accounts-ui-bootstrap-dropdown": {
@@ -46,6 +47,11 @@
         "git": "https://github.com/tmeasday/meteor-errors.git",
         "tag": "v0.2.0",
         "commit": "b7cc525c19defe2dc744e8e34d1328b430f3e03a"
+      },
+      "user-status": {
+        "git": "https://github.com/mizzao/meteor-user-status.git",
+        "tag": "v0.2.0",
+        "commit": "e18cc48440710d0ac23bd1a578974f9142226bf4"
       }
     }
   }
