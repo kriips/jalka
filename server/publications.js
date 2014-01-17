@@ -2,6 +2,10 @@ Meteor.publish('messages', function() {
 	return Messages.find();
 });
 
+Meteor.publish('competitions', function() {
+	return Competitions.find();
+});
+
 Meteor.publish('userStatus', function() {
 	return Meteor.users.find({
 		"status.online": true
@@ -12,6 +16,7 @@ Meteor.publish('userStatus', function() {
 		}
 	});
 });
+
 Meteor.publish('allUsers', function() {
 	return Meteor.users.find({
 	},

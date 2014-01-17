@@ -10,16 +10,17 @@
 		</div>
 		<div class="navbar-collapse collapse navbar-inverse-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">MM 2014</a></li>
-				<li><a href="#">EM 2012</a></li>
-				<li><a href="#">MM 2010</a></li>
-				<li><a href="#">EM 2008</a></li>
-				<li><a href="#">MM 2006</a></li>
-				<li><a href="#">EM 2004</a></li>
+				{{#each competitions}}
+					{{> competitionTitle}}
+				{{/each}}
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				{{loginButtons align="right"}}
 			</ul>
 		</div>
 	</div>
+</template>
+
+<template name="competitionTitle">
+	<li class="{{isActive}}"><a href="#">MM 2014</a></li>
 </template>
