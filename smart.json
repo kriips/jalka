@@ -12,6 +12,7 @@
     "bootstrap-3": {},
     "moment": {},
     "errors": {},
-    "user-status": {}
+    "user-status": {},
+    "spin": {}
   }
 }

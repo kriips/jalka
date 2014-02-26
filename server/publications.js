@@ -1,9 +1,22 @@
-Meteor.publish('messages', function() {
-	return Messages.find();
+Meteor.publish('messages', function(options) {
+	return Messages.find({
+		competition: options.competition
+	});
 });
 
 Meteor.publish('competitions', function() {
-	return Competitions.find();
+	return Competitions.find({
+	},
+	{
+		fields: {
+			name: 1,
+			url: 1
+		}
+	});
+});
+
+Meteor.publish('competition', function(options) {
+	return Competitions.find({name : options.name});
 });
 
 Meteor.publish('userStatus', function() {

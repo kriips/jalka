@@ -10,7 +10,7 @@ Template.messagesList.events({
 
 		if (Meteor.user()) {
 			var message = {
-				message: $(e.target).find('[name=message]').val(),
+				message: $(e.target).find('[name=message]').val()
 			}
 			Meteor.call('addMessage', message, function(error, id) {
 				if (error)

@@ -1,17 +1,21 @@
 <template name="chart">
-	{{#each allUsers}}
+	{{#each competition.chart}}
 		{{> user}}
 	{{/each}}
 </template>
 
 <template name="user">
 	{{#if currentUser}}
-		<span class="label label-warning">{{username}}</span>
+		<span class="label label-warning">{{>chartRow}}</span>
 	{{else}}
-		{{#if status.online}}
-			<span class="label label-success">{{username}}</span>
+		{{#if onlineUser}}
+			<span class="label label-success">{{>chartRow}}</span>
 		{{else}}
-			<span class="label label-default">{{username}}</span>
+			<span class="label label-default">{{>chartRow}}</span>
 		{{/if}}
 	{{/if}}
+</template>
+
+<template name="chartRow">
+	{{place}}. {{username}}: {{points}}
 </template>

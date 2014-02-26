@@ -6,7 +6,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Seltsi jalkaennustus</a>
+			<a class="navbar-brand" href="{{pathFor 'home'}}">Seltsi jalkaennustus</a>
 		</div>
 		<div class="navbar-collapse collapse navbar-inverse-collapse">
 			<ul class="nav navbar-nav">
@@ -22,5 +22,5 @@
 </template>
 
 <template name="competitionTitle">
-	<li class="{{isActive}}"><a href="#">MM 2014</a></li>
+	<li class="{{isActive}}"><a href="/comp/{{url}}">{{name}}</a></li>
 </template>

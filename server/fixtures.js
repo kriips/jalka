@@ -1,11 +1,13 @@
 if (Messages.find().count() === 0) {
 	console.log ('inserting sample messages');
 	Messages.insert({
+		competition: 'MM 2014',
 		timestamp: '2014-01-01 17:10',
 		author: 'Mikk',
 		message: 'kõik on hästi'
 	});
 	Messages.insert({
+		competition: 'MM 2014',
 		timestamp: '2014-01-01 17:11',
 		author: 'Mikk',
 		message: 'kõik on ikka veel hästi'
@@ -16,6 +18,7 @@ if (Competitions.find().count() === 0) {
 	console.log ('inserting competitions');
 	Competitions.insert({
 		name: "MM 2014",
+		url: "mm2014",
 		chart: {
 			pos1 : {
 				place: "1",
@@ -32,6 +35,7 @@ if (Competitions.find().count() === 0) {
 
 	Competitions.insert({
 		name: "EM 2012",
+		url: "em2012",
 		chart: {
 			pos1: {
 				place: "1",
@@ -247,14 +251,17 @@ if (Competitions.find().count() === 0) {
 	});
 
 	Competitions.insert({
-		name: "MM 2010"
+		name: "MM 2010",
+		url: "mm2010"
 	});
 
 	Competitions.insert({
-		name: "EM 2008"
+		name: "EM 2008",
+		url: "em2008"
 	});
 
 	Competitions.insert({
-		name: "MM 2006"
+		name: "MM 2006",
+		url: "mm2006"
 	});
 }
