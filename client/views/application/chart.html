@@ -5,15 +5,17 @@
 </template>
 
 <template name="user">
-	{{#if currentUser}}
-		<span class="label label-warning">{{>chartRow}}</span>
-	{{else}}
-		{{#if onlineUser}}
-			<span class="label label-success">{{>chartRow}}</span>
+	<h4>
+		{{#if currentUser}}
+			<span class="label label-warning">{{>chartRow}}</span>
 		{{else}}
-			<span class="label label-default">{{>chartRow}}</span>
+			{{#if onlineUser}}
+				<span class="label label-success">{{>chartRow}}</span>
+			{{else}}
+				<span class="label label-default">{{>chartRow}}</span>
+			{{/if}}
 		{{/if}}
-	{{/if}}
+	</h4>
 </template>
 
 <template name="chartRow">

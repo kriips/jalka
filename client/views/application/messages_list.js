@@ -1,9 +1,3 @@
-Template.messagesList.helpers({
-	messages: function() {
-		return Messages.find();
-	}
-});
-
 Template.messagesList.events({
 	'submit form': function(e) {
 		e.preventDefault();

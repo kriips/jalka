@@ -16,7 +16,7 @@ Meteor.publish('competitions', function() {
 });
 
 Meteor.publish('competition', function(options) {
-	return Competitions.find({name : options.name});
+	return Competitions.find({url : options.url});
 });
 
 Meteor.publish('userStatus', function() {

@@ -4,9 +4,13 @@ Template.chart.allUsers = function() {
 };
 
 Template.user.currentUser = function() {
-	return this.name === Meteor.user.name;
+	return this.username === Meteor.user().username;
 };
 
 Template.user.onlineUser = function() {
-	return Meteor.user.status.online;
+	var user = Meteor.users.findOne({username: this.username});
+	if (user)
+		return user.status.online;
+	else
+		return false;
 };
