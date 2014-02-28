@@ -2,13 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da26dd8-e155-4583-a89b-71e09fd5ee0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/chart.html" afterPath="$PROJECT_DIR$/client/views/application/chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/chart.js" afterPath="$PROJECT_DIR$/client/views/application/chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/alg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/arg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/aus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/bel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/bih.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/bra.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/chi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/civ.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/cmr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/col.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/crc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/cro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/ecu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/eng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/esp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/fra.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/ger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/gha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/gre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/hon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/irn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/ita.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/jpn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/kor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/mex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/ned.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/nga.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/por.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/rus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/sui.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/uru.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/flags/usa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/application/prediction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/application/prediction.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/collections/messages.js" afterPath="$PROJECT_DIR$/collections/predictions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/competitions.js" afterPath="$PROJECT_DIR$/collections/competitions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/fixtures.js" afterPath="$PROJECT_DIR$/server/fixtures.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/includes/header.html" afterPath="$PROJECT_DIR$/client/views/includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/includes/header.js" afterPath="$PROJECT_DIR$/client/views/includes/header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/home.html" afterPath="$PROJECT_DIR$/client/views/application/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/layout.html" afterPath="$PROJECT_DIR$/client/views/application/layout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/messages_list.html" afterPath="$PROJECT_DIR$/client/views/application/messages_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/messages_list.js" afterPath="$PROJECT_DIR$/client/views/application/messages_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.lock" afterPath="$PROJECT_DIR$/smart.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/style.less" afterPath="$PROJECT_DIR$/client/stylesheets/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jalka.iws" />
@@ -31,11 +73,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chart.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/application/chart.html">
+      <file leaf-file-name="prediction.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/prediction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="229" selection-end="229" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="420">
-              <folding />
+            <state line="5" column="34" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding>
+                <element signature="e#435#495#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,22 +87,28 @@
       <file leaf-file-name="fixtures.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="48" selection-start="4009" selection-end="4009" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="4200">
+            <state line="484" column="18" selection-start="9713" selection-end="9713" vertical-scroll-proportion="0.0" vertical-offset="7058" max-vertical-offset="14025">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="48" selection-start="538" selection-end="538" vertical-scroll-proportion="0.048780486" vertical-offset="210" max-vertical-offset="1050">
+            <state line="28" column="56" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
               <folding>
-                <element signature="e#671#892#0" expanded="true" />
-                <element signature="e#991#1520#0" expanded="true" />
-                <element signature="e#1334#1432#0" expanded="true" />
-                <element signature="e#1541#1874#0" expanded="true" />
+                <element signature="e#689#971#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prediction.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/prediction.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="49" selection-start="941" selection-end="941" vertical-scroll-proportion="-14.375" vertical-offset="135" max-vertical-offset="765">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,18 +116,39 @@
       <file leaf-file-name="publications.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/publications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="31" column="39" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
               <folding>
-                <element signature="e#158#239#0" expanded="true" />
+                <element signature="e#42#135#0" expanded="true" />
+                <element signature="e#187#238#0" expanded="true" />
+                <element signature="e#290#344#0" expanded="true" />
+                <element signature="e#388#486#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
+      <file leaf-file-name="predictions.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/collections/predictions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="77" selection-end="77" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="480">
+            <state line="10" column="39" selection-start="339" selection-end="339" vertical-scroll-proportion="0.25906736" vertical-offset="0" max-vertical-offset="615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="9" selection-start="122" selection-end="122" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -86,21 +157,17 @@
       <file leaf-file-name="messages_list.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding>
-                <element signature="e#59#403#0" expanded="true" />
-              </folding>
+            <state line="16" column="11" selection-start="256" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding>
-                <element signature="e#228#354#0" expanded="true" />
-              </folding>
+            <state line="12" column="30" selection-start="494" selection-end="494" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="450">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,21 +195,25 @@
         <option value="$PROJECT_DIR$/client/views/includes/access_denied.html" />
         <option value="$PROJECT_DIR$/server/validations.js" />
         <option value="$PROJECT_DIR$/client/helpers/config.js" />
-        <option value="$PROJECT_DIR$/collections/messages.js" />
-        <option value="$PROJECT_DIR$/client/views/application/home.html" />
-        <option value="$PROJECT_DIR$/collections/competitions.js" />
         <option value="$PROJECT_DIR$/client/views/application/home.js" />
-        <option value="$PROJECT_DIR$/client/views/includes/header.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/style.less" />
-        <option value="$PROJECT_DIR$/client/views/includes/header.js" />
         <option value="$PROJECT_DIR$/client/views/application/notFound.html" />
-        <option value="$PROJECT_DIR$/server/fixtures.js" />
-        <option value="$PROJECT_DIR$/client/views/application/messages_list.html" />
-        <option value="$PROJECT_DIR$/client/views/application/messages_list.js" />
-        <option value="$PROJECT_DIR$/server/publications.js" />
-        <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/views/application/chart.html" />
         <option value="$PROJECT_DIR$/client/views/application/chart.js" />
+        <option value="$PROJECT_DIR$/collections/messages.js" />
+        <option value="$PROJECT_DIR$/client/views/application/messages_list.html" />
+        <option value="$PROJECT_DIR$/client/views/application/layout.html" />
+        <option value="$PROJECT_DIR$/client/views/includes/header.html" />
+        <option value="$PROJECT_DIR$/client/views/includes/header.js" />
+        <option value="$PROJECT_DIR$/collections/competitions.js" />
+        <option value="$PROJECT_DIR$/server/fixtures.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/style.less" />
+        <option value="$PROJECT_DIR$/client/views/application/home.html" />
+        <option value="$PROJECT_DIR$/client/views/application/messages_list.js" />
+        <option value="$PROJECT_DIR$/client/views/application/prediction.html" />
+        <option value="$PROJECT_DIR$/server/publications.js" />
+        <option value="$PROJECT_DIR$/lib/router.js" />
+        <option value="$PROJECT_DIR$/client/views/application/prediction.js" />
+        <option value="$PROJECT_DIR$/collections/predictions.js" />
       </list>
     </option>
   </component>
@@ -220,20 +291,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jalka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jalka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -253,6 +310,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,6 +370,24 @@
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -321,6 +400,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value=".meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,17 +460,28 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/views/application" />
       <recent name="$PROJECT_DIR$/collections" />
+      <recent name="$PROJECT_DIR$/client/views/application" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img/flags" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/client/views/application" />
       <recent name="$PROJECT_DIR$/client/lib/fonts" />
       <recent name="$PROJECT_DIR$/client/lib/js" />
-      <recent name="$PROJECT_DIR$/client/stylesheets" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -395,11 +525,15 @@
       <created>1393426136835</created>
       <updated>1393426136835</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new data tree">
+      <created>1393537123234</created>
+      <updated>1393537123234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -443,17 +577,13 @@
     <MESSAGE value="users online" />
     <MESSAGE value="competitions" />
     <MESSAGE value="iron router setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="iron router setup" />
+    <MESSAGE value="new data tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="new data tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
@@ -514,11 +644,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="540" />
@@ -559,14 +684,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
@@ -600,11 +717,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/includes/access_denied.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/validations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -615,47 +727,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/helpers/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/competitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.079225354" vertical-offset="0" max-vertical-offset="568" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/notFound.html">
@@ -663,40 +737,116 @@
         <state line="1" column="15" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="43" selection-start="774" selection-end="774" vertical-scroll-proportion="0.60913706" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/includes/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="57" selection-start="95" selection-end="95" vertical-scroll-proportion="0.024390243" vertical-offset="0" max-vertical-offset="615" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/includes/loading.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="7" selection-start="30" selection-end="30" vertical-scroll-proportion="0.02538071" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
+    <entry file="file://$PROJECT_DIR$/client/views/application/chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+        <state line="11" column="28" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.025337838" vertical-offset="0" max-vertical-offset="592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-67.64249" vertical-offset="39165" max-vertical-offset="118920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/competitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="659" selection-end="659" vertical-scroll-proportion="0.5827703" vertical-offset="0" max-vertical-offset="592">
           <folding>
-            <element signature="e#59#403#0" expanded="true" />
+            <element signature="e#113#659#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="77" selection-end="77" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="480">
+        <state line="2" column="32" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0528169" vertical-offset="0" max-vertical-offset="568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/includes/access_denied.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="16" selection-end="28" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/helpers/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="155" selection-end="155" vertical-scroll-proportion="0.14634146" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="494" selection-end="494" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/includes/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="14" selection-start="232" selection-end="232" vertical-scroll-proportion="0.24390244" vertical-offset="0" max-vertical-offset="615">
+          <folding>
+            <element signature="e#52#129#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="9" selection-start="122" selection-end="122" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="27" selection-start="695" selection-end="695" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="11" selection-start="256" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="48" selection-start="4009" selection-end="4009" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4200">
+        <state line="484" column="18" selection-start="9713" selection-end="9713" vertical-scroll-proportion="0.0" vertical-offset="7058" max-vertical-offset="14025">
           <folding />
         </state>
       </provider>
@@ -706,38 +856,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+        <state line="31" column="39" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding>
-            <element signature="e#158#239#0" expanded="true" />
+            <element signature="e#42#135#0" expanded="true" />
+            <element signature="e#187#238#0" expanded="true" />
+            <element signature="e#290#344#0" expanded="true" />
+            <element signature="e#388#486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/chart.html">
+    <entry file="file://$PROJECT_DIR$/client/views/application/prediction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="229" selection-end="229" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="420">
+        <state line="32" column="49" selection-start="941" selection-end="941" vertical-scroll-proportion="-14.375" vertical-offset="135" max-vertical-offset="765">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding>
-            <element signature="e#228#354#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="538" selection-end="538" vertical-scroll-proportion="0.048780486" vertical-offset="210" max-vertical-offset="1050">
+        <state line="28" column="56" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding>
-            <element signature="e#671#892#0" expanded="true" />
-            <element signature="e#991#1520#0" expanded="true" />
-            <element signature="e#1334#1432#0" expanded="true" />
-            <element signature="e#1541#1874#0" expanded="true" />
+            <element signature="e#689#971#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/prediction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="34" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding>
+            <element signature="e#435#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/predictions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="39" selection-start="339" selection-end="339" vertical-scroll-proportion="0.25906736" vertical-offset="0" max-vertical-offset="615">
+          <folding />
         </state>
       </provider>
     </entry>

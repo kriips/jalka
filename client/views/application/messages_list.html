@@ -1,19 +1,22 @@
 <template name="messagesList">
+	<div>
+		<form class="messageForm">
+			<div>
+				<textarea class="form-control" rows="3" name="message"></textarea>
+			</div>
+			<div class="buttonContainer">
+				<button id="submitMessage" type="button" class="btn btn-primary">
+					<i class="fa fa-envelope"></i>
+					Pane teele
+				</button>
+			</div>
+		</form>
+	</div>
 	<div class="messages">
-		{{#each competition.messages}}
+		{{#each sortMessages competition.messages}}
 			{{> messageItem}}
 		{{/each}}
 	</div>
-	<form class="main">
-		<div>
-			<textarea class="form-control" rows="3" name="message"></textarea>
-		</div>
-		<div class="bs-example">
-			<p>
-				<input type="submit" class="btn btn-primary pull-right" value="Pane teele" />
-			</p>
-		</div>
-	</form>
 </template>
 
 <template name="messageItem">

@@ -1,0 +1,46 @@
+<template name="prediction">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Ennusta alagrupimängude tulemused</h3>
+		</div>
+		<div class="panel-body">
+			{{#each competition.fixtures}}
+			{{> fixture}}
+			{{/each}}
+		</div>
+	</div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Ennusta playoffide tulemused</h3>
+		</div>
+		<div class="panel-body">
+		</div>
+	</div>
+
+</template>
+
+<template name="fixture">
+	<div>
+		<div class="btn-group btn-group-xs btn-group-justified" data-toggle="buttons">
+			<label class="btn btn-info">
+				<input type="radio" name="fixture_{{id}}" value="{{team1_key}}">
+				<span class="withFlag matchButton">
+					<img src="/img/flags/{{team1_key}}.png" />{{team1_title}}
+				</span>
+			</label>
+			<label class="btn btn-info">
+				<input type="radio" name="fixture_{{id}}" value="draw">
+				<span class="withFlag matchButton draw">
+					Viik
+				</span>
+			</label>
+			<label class="btn btn-info">
+				<input type="radio" name="fixture_{{id}}" value="{{team2_key}}">
+				<span class="withFlag matchButton goRight">
+					{{team2_title}}
+					<img src="/img/flags/{{team2_key}}.png" />
+				</span>
+			</label>
+		</div>
+	</div>
+</template>
