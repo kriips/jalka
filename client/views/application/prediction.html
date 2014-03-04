@@ -21,10 +21,10 @@
 
 <template name="fixture">
 	<div>
-		<div class="btn-group btn-group-xs btn-group-justified" data-toggle="buttons">
+		<div class="matchButton btn-group btn-group-xs btn-group-justified" data-toggle="buttons">
 			<label class="btn btn-info">
-				<input type="radio" name="fixture_{{id}}" value="{{team1_key}}">
-				<span class="withFlag matchButton">
+				<input type="radio" name="fixture_{{id}}" value="{{team1_key}}" class="fixtureRadios">
+				<span class="withFlag">
 					<img src="/img/flags/{{team1_key}}.png" />{{team1_title}}
 				</span>
 			</label>
