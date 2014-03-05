@@ -27,3 +27,16 @@ Template.prediction.destroyed = function(){
 	// remove all event handlers in the namespace `.tplquestions`
 	$(document.body).off('.fixtureRadios');
 }
+
+Template.fixture.helpers({
+	isSelected: function(key) {
+		var prediction = Predictions.findOne({userId: Meteor.userId(), fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url});
+		if (prediction) {
+			var result = (key == prediction.prediction);
+			return key == prediction.prediction ? 'active': '';
+		}
+		else {
+			return '';
+		}
+	}
+});

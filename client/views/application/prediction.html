@@ -22,19 +22,19 @@
 <template name="fixture">
 	<div>
 		<div class="matchButton btn-group btn-group-xs btn-group-justified" data-toggle="buttons">
-			<label class="btn btn-info">
+			<label class="btn btn-info {{isSelected team1_key}}">
 				<input type="radio" name="fixture_{{id}}" value="{{team1_key}}" class="fixtureRadios">
 				<span class="withFlag">
 					<img src="/img/flags/{{team1_key}}.png" />{{team1_title}}
 				</span>
 			</label>
-			<label class="btn btn-info">
+			<label class="btn btn-info {{isSelected 'draw'}}">
 				<input type="radio" name="fixture_{{id}}" value="draw">
 				<span class="withFlag matchButton draw">
 					Viik
 				</span>
 			</label>
-			<label class="btn btn-info">
+			<label class="btn btn-info {{isSelected team2_key}}">
 				<input type="radio" name="fixture_{{id}}" value="{{team2_key}}">
 				<span class="withFlag matchButton goRight">
 					{{team2_title}}
