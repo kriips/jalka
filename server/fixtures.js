@@ -134,7 +134,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "arg",
 				"team1_title": "Argentina",
 				"team2_key": "bih",
-				"team2_title": "Bosnia-Herzegovina",
+				"team2_title": "Bosnia-Herz.",
 				"play_at": "2014/06/15",
 				"score1": null,
 				"score2": null
@@ -304,7 +304,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "nga",
 				"team1_title": "Nigeria",
 				"team2_key": "bih",
-				"team2_title": "Bosnia-Herzegovina",
+				"team2_title": "Bosnia-Herz.",
 				"play_at": "2014/06/21",
 				"score1": null,
 				"score2": null
@@ -462,7 +462,7 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 42,
 				"team1_key": "bih",
-				"team1_title": "Bosnia-Herzegovina",
+				"team1_title": "Bosnia-Herz.",
 				"team2_key": "irn",
 				"team2_title": "Iran",
 				"play_at": "2014/06/25",
@@ -573,7 +573,7 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "bih",
-				"title": "Bosnia-Herzegovina",
+				"title": "Bosnia-Herz.",
 				"code": "BIH"
 			},
 			{

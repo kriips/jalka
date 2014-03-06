@@ -25,19 +25,19 @@
 			<label class="btn btn-info {{isSelected team1_key}}">
 				<input type="radio" name="fixture_{{id}}" value="{{team1_key}}" class="fixtureRadios">
 				<span class="withFlag">
-					<img src="/img/flags/{{team1_key}}.png" />{{team1_title}}
+					<img src="/img/flags/{{team1_key}}.png" />{{team1_title}} ({{countPredictions team1_key}})
 				</span>
 			</label>
 			<label class="btn btn-info {{isSelected 'draw'}}">
 				<input type="radio" name="fixture_{{id}}" value="draw">
 				<span class="withFlag matchButton draw">
-					Viik
+					Viik ({{countPredictions 'draw'}})
 				</span>
 			</label>
 			<label class="btn btn-info {{isSelected team2_key}}">
 				<input type="radio" name="fixture_{{id}}" value="{{team2_key}}">
 				<span class="withFlag matchButton goRight">
-					{{team2_title}}
+					{{team2_title}} ({{countPredictions team2_key}})
 					<img src="/img/flags/{{team2_key}}.png" />
 				</span>
 			</label>

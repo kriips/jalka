@@ -11,6 +11,7 @@ Template.prediction.created = function() {
 				'addPrediction',
 				prediction,
 				function(error, id) {
+					console.log('prediction added');
 					if (error)
 						Errors.throw(error.reason);
 				}
@@ -30,6 +31,7 @@ Template.prediction.destroyed = function(){
 
 Template.fixture.helpers({
 	isSelected: function(key) {
+		console.log('calling is selected: ' + key);
 		var prediction = Predictions.findOne({userId: Meteor.userId(), fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url});
 		if (prediction) {
 			var result = (key == prediction.prediction);
@@ -38,5 +40,10 @@ Template.fixture.helpers({
 		else {
 			return '';
 		}
+	},
+	countPredictions: function(key) {
+		var predictions = Predictions.find({fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url, prediction: key});
+		return predictions.count();
 	}
 });
+

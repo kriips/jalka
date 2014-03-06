@@ -33,12 +33,12 @@
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
         "branch": "master",
-        "commit": "83f974113db9e1caf9eb161f540df240f5931712"
+        "commit": "f3ee0ef6bc506314e19585550b4f9f5620c4ada6"
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.1.0-1",
-        "commit": "329dccb08bfc18c635676dea600ac9953162cda9"
+        "tag": "v3.1.1-1",
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
