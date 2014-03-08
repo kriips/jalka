@@ -11,12 +11,10 @@ Template.prediction.created = function() {
 				'addPrediction',
 				prediction,
 				function(error, id) {
-					console.log('prediction added');
 					if (error)
 						Errors.throw(error.reason);
 				}
 			);
-			console.log(prediction);
 		}
 		else {
 			Errors.throw("Logi palun sisse");
@@ -25,22 +23,21 @@ Template.prediction.created = function() {
 }
 
 Template.prediction.destroyed = function(){
-	// remove all event handlers in the namespace `.tplquestions`
 	$(document.body).off('.fixtureRadios');
 }
 
 Template.fixture.helpers({
 	isSelected: function(key) {
-		console.log('calling is selected: ' + key);
 		var prediction = Predictions.findOne({userId: Meteor.userId(), fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url});
+		var returnVal = '';
 		if (prediction) {
 			var result = (key == prediction.prediction);
-			return key == prediction.prediction ? 'active': '';
+			returnVal = key == prediction.prediction ? 'active': '';
 		}
-		else {
-			return '';
-		}
+
+		return returnVal;
 	},
+
 	countPredictions: function(key) {
 		var predictions = Predictions.find({fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url, prediction: key});
 		return predictions.count();

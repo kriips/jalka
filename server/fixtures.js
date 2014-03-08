@@ -5,16 +5,6 @@ if (Competitions.find().count() === 0) {
 		name: "MM 2014",
 		url: "mm2014",
 		chart: [
-			{
-				place: "1",
-				username: "mikk",
-				points: "4"
-			},
-			{
-				place: "2",
-				username: "kriips",
-				points: "3"
-			}
 		],
 		messages: [
 			{
@@ -32,9 +22,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 1,
 				"team1_key": "bra",
-				"team1_title": "Brazil",
+				"team1_title": "Brasiilia",
 				"team2_key": "cro",
-				"team2_title": "Croatia",
+				"team2_title": "Horvaatia",
 				"play_at": "2014/06/12",
 				"score1": null,
 				"score2": null
@@ -42,9 +32,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 2,
 				"team1_key": "mex",
-				"team1_title": "Mexico",
+				"team1_title": "Mehhiko",
 				"team2_key": "cmr",
-				"team2_title": "Cameroon",
+				"team2_title": "Kamerun",
 				"play_at": "2014/06/13",
 				"score1": null,
 				"score2": null
@@ -52,9 +42,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 3,
 				"team1_key": "esp",
-				"team1_title": "Spain",
+				"team1_title": "Hispaania",
 				"team2_key": "ned",
-				"team2_title": "Netherlands",
+				"team2_title": "Holland",
 				"play_at": "2014/06/13",
 				"score1": null,
 				"score2": null
@@ -62,9 +52,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 4,
 				"team1_key": "chi",
-				"team1_title": "Chile",
+				"team1_title": "Tšiili",
 				"team2_key": "aus",
-				"team2_title": "Australia",
+				"team2_title": "Austraalia",
 				"play_at": "2014/06/13",
 				"score1": null,
 				"score2": null
@@ -72,9 +62,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 5,
 				"team1_key": "col",
-				"team1_title": "Colombia",
+				"team1_title": "Kolumbia",
 				"team2_key": "gre",
-				"team2_title": "Greece",
+				"team2_title": "Kreeka",
 				"play_at": "2014/06/14",
 				"score1": null,
 				"score2": null
@@ -102,9 +92,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 8,
 				"team1_key": "eng",
-				"team1_title": "England",
+				"team1_title": "Inglismaa",
 				"team2_key": "ita",
-				"team2_title": "Italy",
+				"team2_title": "Itaalia",
 				"play_at": "2014/06/14",
 				"score1": null,
 				"score2": null
@@ -112,7 +102,7 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 9,
 				"team1_key": "sui",
-				"team1_title": "Switzerland",
+				"team1_title": "Šveits",
 				"team2_key": "ecu",
 				"team2_title": "Ecuador",
 				"play_at": "2014/06/15",
@@ -122,7 +112,7 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 10,
 				"team1_key": "fra",
-				"team1_title": "France",
+				"team1_title": "Prantsusmaa",
 				"team2_key": "hon",
 				"team2_title": "Honduras",
 				"play_at": "2014/06/15",
@@ -134,7 +124,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "arg",
 				"team1_title": "Argentina",
 				"team2_key": "bih",
-				"team2_title": "Bosnia-Herz.",
+				"team2_title": "Bosnia ja H",
 				"play_at": "2014/06/15",
 				"score1": null,
 				"score2": null
@@ -142,9 +132,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 12,
 				"team1_key": "irn",
-				"team1_title": "Iran",
+				"team1_title": "Iraan",
 				"team2_key": "nga",
-				"team2_title": "Nigeria",
+				"team2_title": "Nigeeria",
 				"play_at": "2014/06/16",
 				"score1": null,
 				"score2": null
@@ -152,7 +142,7 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 13,
 				"team1_key": "ger",
-				"team1_title": "Germany",
+				"team1_title": "Saksamaa",
 				"team2_key": "por",
 				"team2_title": "Portugal",
 				"play_at": "2014/06/16",
@@ -164,7 +154,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "gha",
 				"team1_title": "Ghana",
 				"team2_key": "usa",
-				"team2_title": "United States",
+				"team2_title": "USA",
 				"play_at": "2014/06/16",
 				"score1": null,
 				"score2": null
@@ -172,9 +162,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 15,
 				"team1_key": "bel",
-				"team1_title": "Belgium",
+				"team1_title": "Belgia",
 				"team2_key": "alg",
-				"team2_title": "Algeria",
+				"team2_title": "Alžeeria",
 				"play_at": "2014/06/17",
 				"score1": null,
 				"score2": null
@@ -182,9 +172,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 16,
 				"team1_key": "rus",
-				"team1_title": "Russia",
+				"team1_title": "Venemaa",
 				"team2_key": "kor",
-				"team2_title": "South Korea",
+				"team2_title": "Lõuna-Korea",
 				"play_at": "2014/06/17",
 				"score1": null,
 				"score2": null
@@ -192,9 +182,9 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 17,
 				"team1_key": "bra",
-				"team1_title": "Brazil",
+				"team1_title": "Brasiilia",
 				"team2_key": "mex",
-				"team2_title": "Mexico",
+				"team2_title": "Mehhiko",
 				"play_at": "2014/06/17",
 				"score1": null,
 				"score2": null
@@ -202,17 +192,17 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 18,
 				"team1_key": "cmr",
-				"team1_title": "Cameroon",
+				"team1_title": "Kamerun",
 				"team2_key": "cro",
-				"team2_title": "Croatia",
+				"team2_title": "Horvaatia",
 				"play_at": "2014/06/18",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 17,
+				"id": 19,
 				"team1_key": "esp",
-				"team1_title": "Spain",
+				"team1_title": "Hispaania",
 				"team2_key": "chi",
 				"team2_title": "Chile",
 				"play_at": "2014/06/18",
@@ -220,19 +210,19 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 18,
+				"id": 20,
 				"team1_key": "aus",
-				"team1_title": "Australia",
+				"team1_title": "Austraalia",
 				"team2_key": "ned",
-				"team2_title": "Netherlands",
+				"team2_title": "Holland",
 				"play_at": "2014/06/18",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 19,
+				"id": 21,
 				"team1_key": "col",
-				"team1_title": "Colombia",
+				"team1_title": "Kolumbia",
 				"team2_key": "civ",
 				"team2_title": "Côte d'Ivoire",
 				"play_at": "2014/06/19",
@@ -240,29 +230,29 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 20,
+				"id": 22,
 				"team1_key": "jpn",
 				"team1_title": "Japan",
 				"team2_key": "gre",
-				"team2_title": "Greece",
+				"team2_title": "Kreeka",
 				"play_at": "2014/06/19",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 21,
+				"id": 23,
 				"team1_key": "uru",
 				"team1_title": "Uruguay",
 				"team2_key": "eng",
-				"team2_title": "England",
+				"team2_title": "Inglismaa",
 				"play_at": "2014/06/19",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 22,
+				"id": 24,
 				"team1_key": "ita",
-				"team1_title": "Italy",
+				"team1_title": "Itaalia",
 				"team2_key": "crc",
 				"team2_title": "Costa Rica",
 				"play_at": "2014/06/20",
@@ -270,17 +260,17 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 23,
+				"id": 25,
 				"team1_key": "sui",
-				"team1_title": "Switzerland",
+				"team1_title": "Šveits",
 				"team2_key": "fra",
-				"team2_title": "France",
+				"team2_title": "Prantsusmaa",
 				"play_at": "2014/06/20",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 24,
+				"id": 26,
 				"team1_key": "hon",
 				"team1_title": "Honduras",
 				"team2_key": "ecu",
@@ -290,29 +280,29 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 25,
+				"id": 27,
 				"team1_key": "arg",
 				"team1_title": "Argentina",
 				"team2_key": "irn",
-				"team2_title": "Iran",
+				"team2_title": "Iraan",
 				"play_at": "2014/06/21",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 26,
+				"id": 28,
 				"team1_key": "nga",
-				"team1_title": "Nigeria",
+				"team1_title": "Nigeeria",
 				"team2_key": "bih",
-				"team2_title": "Bosnia-Herz.",
+				"team2_title": "Bosnia ja H",
 				"play_at": "2014/06/21",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 27,
+				"id": 29,
 				"team1_key": "ger",
-				"team1_title": "Germany",
+				"team1_title": "Saksamaa",
 				"team2_key": "gha",
 				"team2_title": "Ghana",
 				"play_at": "2014/06/21",
@@ -320,9 +310,9 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 28,
+				"id": 30,
 				"team1_key": "usa",
-				"team1_title": "United States",
+				"team1_title": "USA",
 				"team2_key": "por",
 				"team2_title": "Portugal",
 				"play_at": "2014/06/22",
@@ -330,59 +320,59 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 29,
-				"team1_key": "bel",
-				"team1_title": "Belgium",
-				"team2_key": "rus",
-				"team2_title": "Russia",
-				"play_at": "2014/06/22",
-				"score1": null,
-				"score2": null
-			},
-			{
-				"id": 30,
-				"team1_key": "kor",
-				"team1_title": "South Korea",
-				"team2_key": "alg",
-				"team2_title": "Algeria",
-				"play_at": "2014/06/22",
-				"score1": null,
-				"score2": null
-			},
-			{
 				"id": 31,
-				"team1_key": "cmr",
-				"team1_title": "Cameroon",
-				"team2_key": "bra",
-				"team2_title": "Brazil",
-				"play_at": "2014/06/23",
+				"team1_key": "bel",
+				"team1_title": "Belgia",
+				"team2_key": "rus",
+				"team2_title": "Venemaa",
+				"play_at": "2014/06/22",
 				"score1": null,
 				"score2": null
 			},
 			{
 				"id": 32,
-				"team1_key": "cro",
-				"team1_title": "Croatia",
-				"team2_key": "mex",
-				"team2_title": "Mexico",
-				"play_at": "2014/06/23",
+				"team1_key": "kor",
+				"team1_title": "Lõuna-Korea",
+				"team2_key": "alg",
+				"team2_title": "Alžeeria",
+				"play_at": "2014/06/22",
 				"score1": null,
 				"score2": null
 			},
 			{
 				"id": 33,
-				"team1_key": "aus",
-				"team1_title": "Australia",
-				"team2_key": "esp",
-				"team2_title": "Spain",
+				"team1_key": "cmr",
+				"team1_title": "Kamerun",
+				"team2_key": "bra",
+				"team2_title": "Brasiilia",
 				"play_at": "2014/06/23",
 				"score1": null,
 				"score2": null
 			},
 			{
 				"id": 34,
+				"team1_key": "cro",
+				"team1_title": "Horvaatia",
+				"team2_key": "mex",
+				"team2_title": "Mehhiko",
+				"play_at": "2014/06/23",
+				"score1": null,
+				"score2": null
+			},
+			{
+				"id": 35,
+				"team1_key": "aus",
+				"team1_title": "Austraalia",
+				"team2_key": "esp",
+				"team2_title": "Hispaania",
+				"play_at": "2014/06/23",
+				"score1": null,
+				"score2": null
+			},
+			{
+				"id": 36,
 				"team1_key": "ned",
-				"team1_title": "Netherlands",
+				"team1_title": "Holland",
 				"team2_key": "chi",
 				"team2_title": "Chile",
 				"play_at": "2014/06/23",
@@ -390,29 +380,29 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 35,
+				"id": 37,
 				"team1_key": "jpn",
 				"team1_title": "Japan",
 				"team2_key": "col",
-				"team2_title": "Colombia",
+				"team2_title": "Kolumbia",
 				"play_at": "2014/06/24",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 36,
+				"id": 38,
 				"team1_key": "civ",
 				"team1_title": "Côte d'Ivoire",
 				"team2_key": "gre",
-				"team2_title": "Greece",
+				"team2_title": "Kreeka",
 				"play_at": "2014/06/24",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 37,
+				"id": 39,
 				"team1_key": "ita",
-				"team1_title": "Italy",
+				"team1_title": "Itaalia",
 				"team2_key": "uru",
 				"team2_title": "Uruguay",
 				"play_at": "2014/06/24",
@@ -420,39 +410,39 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 38,
+				"id": 40,
 				"team1_key": "crc",
 				"team1_title": "Costa Rica",
 				"team2_key": "eng",
-				"team2_title": "England",
+				"team2_title": "Inglismaa",
 				"play_at": "2014/06/24",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 39,
+				"id": 41,
 				"team1_key": "hon",
 				"team1_title": "Honduras",
 				"team2_key": "sui",
-				"team2_title": "Switzerland",
+				"team2_title": "Šveits",
 				"play_at": "2014/06/25",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 40,
+				"id": 42,
 				"team1_key": "ecu",
 				"team1_title": "Ecuador",
 				"team2_key": "fra",
-				"team2_title": "France",
+				"team2_title": "Prantsusmaa",
 				"play_at": "2014/06/25",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 41,
+				"id": 43,
 				"team1_key": "nga",
-				"team1_title": "Nigeria",
+				"team1_title": "Nigeeria",
 				"team2_key": "arg",
 				"team2_title": "Argentina",
 				"play_at": "2014/06/25",
@@ -460,27 +450,27 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 42,
+				"id": 44,
 				"team1_key": "bih",
-				"team1_title": "Bosnia-Herz.",
+				"team1_title": "Bosnia ja H",
 				"team2_key": "irn",
-				"team2_title": "Iran",
+				"team2_title": "Iraan",
 				"play_at": "2014/06/25",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 43,
+				"id": 45,
 				"team1_key": "usa",
-				"team1_title": "United States",
+				"team1_title": "USA",
 				"team2_key": "ger",
-				"team2_title": "Germany",
+				"team2_title": "Saksamaa",
 				"play_at": "2014/06/26",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 44,
+				"id": 46,
 				"team1_key": "por",
 				"team1_title": "Portugal",
 				"team2_key": "gha",
@@ -490,21 +480,21 @@ if (Competitions.find().count() === 0) {
 				"score2": null
 			},
 			{
-				"id": 45,
+				"id": 47,
 				"team1_key": "kor",
-				"team1_title": "South Korea",
+				"team1_title": "Lõuna-Korea",
 				"team2_key": "bel",
-				"team2_title": "Belgium",
+				"team2_title": "Belgia",
 				"play_at": "2014/06/26",
 				"score1": null,
 				"score2": null
 			},
 			{
-				"id": 46,
+				"id": 48,
 				"team1_key": "alg",
-				"team1_title": "Algeria",
+				"team1_title": "Alžeeria",
 				"team2_key": "rus",
-				"team2_title": "Russia",
+				"team2_title": "Venemaa",
 				"play_at": "2014/06/26",
 				"score1": null,
 				"score2": null
@@ -513,22 +503,22 @@ if (Competitions.find().count() === 0) {
 		teams: [
 			{
 				"key": "gre",
-				"title": "Greece",
+				"title": "Kreeka",
 				"code": "GRE"
 			},
 			{
 				"key": "rus",
-				"title": "Russia",
+				"title": "Venemaa",
 				"code": "RUS"
 			},
 			{
 				"key": "ned",
-				"title": "Netherlands",
+				"title": "Holland",
 				"code": "NED"
 			},
 			{
 				"key": "ger",
-				"title": "Germany",
+				"title": "Saksamaa",
 				"code": "GER"
 			},
 			{
@@ -538,47 +528,47 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "esp",
-				"title": "Spain",
+				"title": "Hispaania",
 				"code": "ESP"
 			},
 			{
 				"key": "ita",
-				"title": "Italy",
+				"title": "Itaalia",
 				"code": "ITA"
 			},
 			{
 				"key": "cro",
-				"title": "Croatia",
+				"title": "Horvaatia",
 				"code": "CRO"
 			},
 			{
 				"key": "fra",
-				"title": "France",
+				"title": "Prantsusmaa",
 				"code": "FRA"
 			},
 			{
 				"key": "eng",
-				"title": "England",
+				"title": "Inglismaa",
 				"code": "ENG"
 			},
 			{
 				"key": "sui",
-				"title": "Switzerland",
+				"title": "Šveits",
 				"code": "SUI"
 			},
 			{
 				"key": "bel",
-				"title": "Belgium",
+				"title": "Belgia",
 				"code": "BEL"
 			},
 			{
 				"key": "bih",
-				"title": "Bosnia-Herz.",
+				"title": "Bosnia ja H",
 				"code": "BIH"
 			},
 			{
 				"key": "alg",
-				"title": "Algeria",
+				"title": "Alžeeria",
 				"code": "ALG"
 			},
 			{
@@ -593,22 +583,22 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "cmr",
-				"title": "Cameroon",
+				"title": "Kamerun",
 				"code": "CMR"
 			},
 			{
 				"key": "nga",
-				"title": "Nigeria",
+				"title": "Nigeeria",
 				"code": "NGA"
 			},
 			{
 				"key": "mex",
-				"title": "Mexico",
+				"title": "Mehhiko",
 				"code": "MEX"
 			},
 			{
 				"key": "usa",
-				"title": "United States",
+				"title": "USA",
 				"code": "USA"
 			},
 			{
@@ -628,7 +618,7 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "bra",
-				"title": "Brazil",
+				"title": "Brasiilia",
 				"code": "BRA"
 			},
 			{
@@ -643,7 +633,7 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "col",
-				"title": "Colombia",
+				"title": "Kolumbia",
 				"code": "COL"
 			},
 			{
@@ -653,7 +643,7 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "aus",
-				"title": "Australia",
+				"title": "Austraalia",
 				"code": "AUS"
 			},
 			{
@@ -663,12 +653,12 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "kor",
-				"title": "South Korea",
+				"title": "Lõuna-Korea",
 				"code": "KOR"
 			},
 			{
 				"key": "irn",
-				"title": "Iran",
+				"title": "Iraan",
 				"code": "IRN"
 			}
 		]
@@ -911,7 +901,279 @@ if (Competitions.find().count() === 0) {
 		year: "2010",
 		name: "MM 2010",
 		url: "mm2010",
-		isActive: 'no'
+		isActive: 'no',
+		chart: [
+			{
+				place: "1",
+				username: 'Mikk Kard',
+				points: 99
+			},
+			{
+				place: "2-3",
+				username: 'Edvard Garder',
+				points: 88
+			},
+			{
+				place: "2-3",
+				username: 'Rene Varul',
+				points: 88
+			},
+			{
+				place: "4",
+				username: 'Jaan Roos',
+				points: 86
+			},
+			{
+				place: "5",
+				username: 'Ott Järvela',
+				points: 84
+			},
+			{
+				place: "6-7",
+				username: 'Hans Lõugas',
+				points: 81
+			},
+			{
+				place: "6-7",
+				username: 'kimble',
+				points: 81
+			},
+			{
+				place: "8-9",
+				username: 'Martin Leis',
+				points: 79
+			},
+			{
+				place: "8-9",
+				username: 'Paul Korrovits',
+				points: 79
+			},
+			{
+				place: "10-12",
+				username: 'Krister Tüllinen',
+				points: 77
+			},
+			{
+				place: "10-12",
+				username: 'Martin Aadamsoo',
+				points: 77
+			},
+			{
+				place: "10-12",
+				username: 'Siim Sikk',
+				points: 77
+			},
+			{
+				place: "13",
+				username: 'Taavi Tuvikene',
+				points: 76
+			},
+			{
+				place: "14",
+				username: 'Kõige Sagedasem',
+				points: 75
+			},
+			{
+				place: "15-17",
+				username: 'Allan Kaldoja',
+				points: 73
+			},
+			{
+				place: "15-17",
+				username: 'Indrek Mihhels',
+				points: 73
+			},
+			{
+				place: "15-17",
+				username: 'Märt Hiietamm',
+				points: 73
+			},
+			{
+				place: "18-19",
+				username: 'Esper Linask',
+				points: 72
+			},
+			{
+				place: "18-19",
+				username: 'Raol Kallas',
+				points: 72
+			},
+			{
+				place: "20-22",
+				username: 'Juhan Nöps',
+				points: 71
+			},
+			{
+				place: "20-22",
+				username: 'Roger Uusmaa',
+				points: 71
+			},
+			{
+				place: "20-22",
+				username: 'Veiko Sammelselg',
+				points: 71
+			},
+			{
+				place: "23-25",
+				username: 'Maanus Vinni',
+				points: 70
+			},
+			{
+				place: "23-25",
+				username: 'Martin Häidberg',
+				points: 70
+			},
+			{
+				place: "23-25",
+				username: 'Sven Tarum',
+				points: 70
+			},
+			{
+				place: "26-30",
+				username: 'Madis Raaper',
+				points: 69
+			},
+			{
+				place: "26-30",
+				username: 'Mart Raukas',
+				points: 69
+			},
+			{
+				place: "26-30",
+				username: 'Siim Tiidemann',
+				points: 69
+			},
+			{
+				place: "26-30",
+				username: 'Martin Öövel',
+				points: 69
+			},
+			{
+				place: "26-30",
+				username: 'Raivo Prank',
+				points: 69
+			},
+			{
+				place: "31-34",
+				username: 'Erki Heinsaar',
+				points: 68
+			},
+			{
+				place: "31-34",
+				username: 'Mikk Vainik',
+				points: 68
+			},
+			{
+				place: "31-34",
+				username: 'Priit Peipman',
+				points: 68
+			},
+			{
+				place: "31-34",
+				username: 'Toomas Gross',
+				points: 68
+			},
+			{
+				place: "35-39",
+				username: 'Claude Kaasik',
+				points: 67
+			},
+			{
+				place: "35-39",
+				username: 'Karl-Kristjan Koit',
+				points: 67
+			},
+			{
+				place: "35-39",
+				username: 'Martin Simmermann',
+				points: 67
+			},
+			{
+				place: "35-39",
+				username: 'Rainer Randmeri',
+				points: 67
+			},
+			{
+				place: "35-39",
+				username: 'Toomas Kiho',
+				points: 67
+			},
+			{
+				place: "40-42",
+				username: 'Henri Sepp',
+				points: 66
+			},
+			{
+				place: "40-42",
+				username: 'Mart Soidro',
+				points: 66
+			},
+			{
+				place: "40-42",
+				username: 'Rain Eensaar',
+				points: 66
+			},
+			{
+				place: "43",
+				username: 'Madis Vodja',
+				points: 65
+			},
+			{
+				place: "44-46",
+				username: 'Mihkel Allik',
+				points: 64
+			},
+			{
+				place: "44-46",
+				username: 'Toomas Aasmäe',
+				points: 64
+			},
+			{
+				place: "44-46",
+				username: 'Valdur Kadakas',
+				points: 64
+			},
+			{
+				place: "47",
+				username: 'Riho Tamm',
+				points: 63
+			},
+			{
+				place: "48",
+				username: 'Matti Tarum',
+				points: 61
+			},
+			{
+				place: "49",
+				username: 'Raul Varul',
+				points: 58
+			},
+			{
+				place: "50-51",
+				username: 'Kaspar Arro',
+				points: 57
+			},
+			{
+				place: "50-51",
+				username: 'Tanel Kutti',
+				points: 57
+			},
+			{
+				place: "52",
+				username: 'Villu Viidul',
+				points: 56
+			},
+			{
+				place: "53",
+				username: 'Kristjan Teder',
+				points: 54
+			},
+			{
+				place: "54",
+				username: 'Ragnar Õun',
+				points: 52
+			}
+		]
 	});
 
 	Competitions.insert({

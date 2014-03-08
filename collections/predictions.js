@@ -25,7 +25,9 @@ Meteor.methods({
 		});
 		if (prediction) {
 			Predictions.update(prediction._id, {
-				prediction: predictionAttributes.result
+				$set: {
+					prediction: predictionAttributes.result
+				}
 			},
 			function() {
 			});

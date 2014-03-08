@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da26dd8-e155-4583-a89b-71e09fd5ee0c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/sui.png" afterPath="$PROJECT_DIR$/public/img/flags/sui.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/fixtures.js" afterPath="$PROJECT_DIR$/server/fixtures.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/messages_list.html" afterPath="$PROJECT_DIR$/client/views/application/messages_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/prediction.html" afterPath="$PROJECT_DIR$/client/views/application/prediction.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/application/prediction.js" afterPath="$PROJECT_DIR$/client/views/application/prediction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.lock" afterPath="$PROJECT_DIR$/smart.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/predictions.js" afterPath="$PROJECT_DIR$/collections/predictions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/style.less" afterPath="$PROJECT_DIR$/client/stylesheets/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jalka.iws" />
@@ -28,46 +32,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fixtures.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/fixtures.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="575" column="34" selection-start="11165" selection-end="11165" vertical-scroll-proportion="0.0" vertical-offset="8383" max-vertical-offset="14025">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prediction.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/views/application/prediction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.9253247" vertical-offset="120" max-vertical-offset="780">
-              <folding>
-                <element signature="e#41#568#0" expanded="true" />
-                <element signature="e#114#564#0" expanded="true" />
-                <element signature="e#378#473#0" expanded="true" />
-                <element signature="e#775#1126#0" expanded="true" />
-                <element signature="e#1161#1332#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="29" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="705">
+            <state line="34" column="74" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prediction.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/application/prediction.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="21" selection-start="488" selection-end="488" vertical-scroll-proportion="0.10135135" vertical-offset="195" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fixtures.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/fixtures.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="502" column="6" selection-start="10132" selection-end="10132" vertical-scroll-proportion="0.0" vertical-offset="7308" max-vertical-offset="17955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="30" selection-start="311" selection-end="311" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="16" selection-start="425" selection-end="425" vertical-scroll-proportion="-22.75" vertical-offset="24" max-vertical-offset="720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prediction.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/prediction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="67" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="780">
               <folding>
-                <element signature="e#409#668#0" expanded="true" />
+                <element signature="e#41#502#0" expanded="true" />
+                <element signature="e#114#498#0" expanded="true" />
+                <element signature="e#378#435#0" expanded="true" />
+                <element signature="e#546#590#0" expanded="true" />
+                <element signature="e#646#972#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prediction.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/application/prediction.html">
+      <file leaf-file-name="predictions.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collections/predictions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="63" selection-start="626" selection-end="650" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="765">
-              <folding />
+            <state line="42" column="12" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="795">
+              <folding>
+                <element signature="e#875#881#0" expanded="true" />
+                <element signature="e#1088#1094#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,20 +132,20 @@
         <option value="$PROJECT_DIR$/client/views/application/chart.html" />
         <option value="$PROJECT_DIR$/client/views/application/chart.js" />
         <option value="$PROJECT_DIR$/collections/messages.js" />
-        <option value="$PROJECT_DIR$/client/views/application/messages_list.html" />
         <option value="$PROJECT_DIR$/client/views/application/layout.html" />
         <option value="$PROJECT_DIR$/client/views/includes/header.html" />
         <option value="$PROJECT_DIR$/client/views/includes/header.js" />
         <option value="$PROJECT_DIR$/collections/competitions.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/style.less" />
         <option value="$PROJECT_DIR$/client/views/application/home.html" />
         <option value="$PROJECT_DIR$/client/views/application/messages_list.js" />
         <option value="$PROJECT_DIR$/server/publications.js" />
+        <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/collections/predictions.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/style.less" />
+        <option value="$PROJECT_DIR$/client/views/application/prediction.js" />
+        <option value="$PROJECT_DIR$/client/views/application/messages_list.html" />
         <option value="$PROJECT_DIR$/server/fixtures.js" />
         <option value="$PROJECT_DIR$/client/views/application/prediction.html" />
-        <option value="$PROJECT_DIR$/lib/router.js" />
-        <option value="$PROJECT_DIR$/client/views/application/prediction.js" />
       </list>
     </option>
   </component>
@@ -149,7 +181,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,6 +323,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,7 +423,11 @@
       <created>1394032655427</created>
       <updated>1394032655427</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="predictions saving and loading works">
+      <created>1394143895112</created>
+      <updated>1394143895112</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -400,24 +436,24 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22503008" sideWeight="0.49861112" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20625" sideWeight="0.77315825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22503008" sideWeight="0.5013889" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22503008" sideWeight="0.5011728" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15486111" sideWeight="0.77315825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22611232" sideWeight="0.49882722" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.49960908" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -554,11 +590,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/fixtures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3975" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3975" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
@@ -651,11 +687,6 @@
         <state line="29" column="27" selection-start="695" selection-end="695" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="540" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="9" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240" />
@@ -671,11 +702,6 @@
         <state line="16" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="525" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="3" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
@@ -683,50 +709,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/predictions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="49" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+        <state line="42" column="12" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="795">
           <folding>
-            <element signature="e#856#862#0" expanded="false" />
-            <element signature="e#1069#1075#0" expanded="false" />
+            <element signature="e#875#881#0" expanded="true" />
+            <element signature="e#1088#1094#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="29" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="705">
-          <folding>
-            <element signature="e#409#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/fixtures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="575" column="34" selection-start="11165" selection-end="11165" vertical-scroll-proportion="0.0" vertical-offset="8383" max-vertical-offset="14025">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/prediction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="63" selection-start="626" selection-end="650" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="38" column="16" selection-start="425" selection-end="425" vertical-scroll-proportion="-22.75" vertical-offset="24" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/application/prediction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.9253247" vertical-offset="120" max-vertical-offset="780">
+        <state line="41" column="67" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="780">
           <folding>
-            <element signature="e#41#568#0" expanded="true" />
-            <element signature="e#114#564#0" expanded="true" />
-            <element signature="e#378#473#0" expanded="true" />
-            <element signature="e#775#1126#0" expanded="true" />
-            <element signature="e#1161#1332#0" expanded="true" />
+            <element signature="e#41#502#0" expanded="true" />
+            <element signature="e#114#498#0" expanded="true" />
+            <element signature="e#378#435#0" expanded="true" />
+            <element signature="e#546#590#0" expanded="true" />
+            <element signature="e#646#972#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="74" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/messages_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="311" selection-end="311" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/fixtures.js">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="502" column="6" selection-start="10132" selection-end="10132" vertical-scroll-proportion="0.0" vertical-offset="7308" max-vertical-offset="17955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/prediction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="488" selection-end="488" vertical-scroll-proportion="0.10135135" vertical-offset="195" max-vertical-offset="1095">
+          <folding />
         </state>
       </provider>
     </entry>
