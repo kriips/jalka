@@ -9,6 +9,10 @@
 			{{/each}}
 		</div>
 	</div>
+
+</template>
+
+<template name="predictionPlayoffs">
 	<div class="panel panel-primary">
 		<div class="panel-heading">
 			<h3 class="panel-title">Ennusta playoffide tulemused</h3>
@@ -16,17 +20,36 @@
 		<div class="panel-body">
 			<div class="well well-sm clearfix">
 				<div>
-					Vali 1/16-finaali pääsejad
+					Kes jõuavad kaheksandikfinaali?
 				</div>
-				{{#each competition.teams}}
-					{{> playOff1}}
-				{{/each}}
+				<div class="btn-group btn-group-xs" name="stage5" data-toggle="buttons">
+					{{#each competition.teams}}
+					<label class="btn btn-primary" style="margin-left:-1px;">
+						{{> playOff}}
+					</label>
+					{{/each}}
+				</div>
+
+			</div>
+			<div class="well well-sm clearfix">
+				<div>
+					Kes jõuavad veerandfinaali?
+				</div>
+				<div class="btn-group btn-group-xs" name="stage4" data-toggle="buttons">
+					{{#each playoffStage 4}}
+					<label class="btn btn-primary" style="margin-left:-1px;">
+						{{> playOff}}
+					</label>
+					{{/each}}
+				</div>
+
 			</div>
 		</div>
 	</div>
 </template>
 
-<template name="playOff1">
+<template name="playOff">
+	<input type="checkbox" name="{{key}}" class="playoffCheckboxes">
 	<span class="withFlag">
 		<img src="/img/flags/{{key}}.png" />
 	</span>

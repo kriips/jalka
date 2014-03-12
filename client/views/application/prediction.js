@@ -20,6 +20,36 @@ Template.prediction.created = function() {
 			Errors.throw("Logi palun sisse");
 		}
 	});
+
+	$(document.body).on('change.playoffCheckboxes', 'input:checkbox', function(e){
+		if (Meteor.user()) {
+			var checkbox = $(e.target);
+			var stage = checkbox.closest('.btn-group');
+			stage = stage.attr('name');
+			if (checkbox.val() === 'on') {
+				var prediction = {
+					stage: stage[stage.length-1] - 1,
+					team: checkbox.attr('name'),
+					event: Session.get('selectedCompetition').url
+				};
+				console.log(prediction);
+				Meteor.call(
+					'addPrediction',
+					prediction,
+					function(error, id) {
+						if (error)
+							Errors.throw(error.reason);
+					}
+				);
+			}
+			else {
+				// todo: remove prediction
+			}
+		}
+		else {
+			Errors.throw("Logi palun sisse");
+		}
+	});
 }
 
 Template.prediction.destroyed = function(){
@@ -41,6 +71,12 @@ Template.fixture.helpers({
 	countPredictions: function(key) {
 		var predictions = Predictions.find({fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url, prediction: key});
 		return predictions.count();
+	},
+
+	playoffStage: function(stage) {
+		var teams = Predictions.find({userId: Meteor.userId(), stage: stage, event: Session.get('selectedCompetition').url});
+		console.log(teams);
+		return teams;
 	}
 });
 
