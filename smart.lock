@@ -33,7 +33,7 @@
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
         "branch": "master",
-        "commit": "f3ee0ef6bc506314e19585550b4f9f5620c4ada6"
+        "commit": "182df48efe05ff1999916659a5a6db00081fbae8"
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",

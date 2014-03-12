@@ -24,15 +24,16 @@ Template.prediction.created = function() {
 	$(document.body).on('change.playoffCheckboxes', 'input:checkbox', function(e){
 		if (Meteor.user()) {
 			var checkbox = $(e.target);
+			var checkboxLabel = checkbox.closest('label');
 			var stage = checkbox.closest('.btn-group');
 			stage = stage.attr('name');
-			if (checkbox.val() === 'on') {
-				var prediction = {
-					stage: stage[stage.length-1] - 1,
-					team: checkbox.attr('name'),
-					event: Session.get('selectedCompetition').url
-				};
-				console.log(prediction);
+			console.log(checkboxLabel.hasClass('active'));
+			var prediction = {
+				stage: stage[stage.length-1] - 1,
+				key: checkbox.attr('name'),
+				event: Session.get('selectedCompetition').url
+			};
+			if (!checkboxLabel.hasClass('active')) {
 				Meteor.call(
 					'addPrediction',
 					prediction,
@@ -43,7 +44,14 @@ Template.prediction.created = function() {
 				);
 			}
 			else {
-				// todo: remove prediction
+				Meteor.call(
+					'removePrediction',
+					prediction,
+					function(error, id) {
+						if (error)
+							Errors.throw(error.reason);
+					}
+				);
 			}
 		}
 		else {
@@ -61,7 +69,6 @@ Template.fixture.helpers({
 		var prediction = Predictions.findOne({userId: Meteor.userId(), fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url});
 		var returnVal = '';
 		if (prediction) {
-			var result = (key == prediction.prediction);
 			returnVal = key == prediction.prediction ? 'active': '';
 		}
 
@@ -71,12 +78,21 @@ Template.fixture.helpers({
 	countPredictions: function(key) {
 		var predictions = Predictions.find({fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url, prediction: key});
 		return predictions.count();
-	},
-
-	playoffStage: function(stage) {
-		var teams = Predictions.find({userId: Meteor.userId(), stage: stage, event: Session.get('selectedCompetition').url});
-		console.log(teams);
-		return teams;
 	}
 });
 
+Template.predictionPlayoffs.helpers({
+	playoffStage: function(stage) {
+		var teams = Predictions.find({userId: Meteor.userId(), stage: stage, event: Session.get('selectedCompetition').url});
+		return teams;
+	},
+	isChecked: function(stage) {
+		var prediction = Predictions.findOne({userId: Meteor.userId(), key: this.key, stage: stage, event: Session.get('selectedCompetition').url});
+		if (prediction) {
+			return 'active';
+		}
+		else {
+			return '';
+		}
+	}
+});

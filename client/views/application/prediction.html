@@ -18,32 +18,32 @@
 			<h3 class="panel-title">Ennusta playoffide tulemused</h3>
 		</div>
 		<div class="panel-body">
-			<div class="well well-sm clearfix">
-				<div>
-					Kes jõuavad kaheksandikfinaali?
-				</div>
+			<fieldset class="well well-sm clearfix">
+				<legend>
+					Kes jõuavad nende võistkondade hulgast kaheksandikfinaali?
+				</legend>
 				<div class="btn-group btn-group-xs" name="stage5" data-toggle="buttons">
 					{{#each competition.teams}}
-					<label class="btn btn-primary" style="margin-left:-1px;">
-						{{> playOff}}
-					</label>
+						<label class="btn btn-primary {{isChecked 4}}" style="margin-left:-1px;">
+							{{> playOff}}
+						</label>
 					{{/each}}
 				</div>
 
-			</div>
-			<div class="well well-sm clearfix">
-				<div>
-					Kes jõuavad veerandfinaali?
-				</div>
+			</fieldset>
+			<fieldset class="well well-sm clearfix">
+				<legend>
+					Kes jõuavad nende võistkondade hulgast veerandfinaali?
+				</legend>
 				<div class="btn-group btn-group-xs" name="stage4" data-toggle="buttons">
 					{{#each playoffStage 4}}
-					<label class="btn btn-primary" style="margin-left:-1px;">
-						{{> playOff}}
-					</label>
+						<label class="btn btn-primary {{isChecked 3}}" style="margin-left:-1px;">
+							{{> playOff}}
+						</label>
 					{{/each}}
 				</div>
 
-			</div>
+			</fieldset>
 		</div>
 	</div>
 </template>
