@@ -62,7 +62,8 @@ Meteor.methods({
 						event: predictionAttributes.event
 					},
 					function () {
-					});
+					}
+				);
 			}
 		}
 		return;
@@ -80,7 +81,8 @@ Meteor.methods({
 				event: predictionAttributes.event
 			},
 			function () {
-			});
+			}
+		);
 	}
 
 });

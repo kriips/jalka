@@ -10,3 +10,16 @@ Handlebars.registerHelper('dateFormat', function(context, block) {
 		return context;   //  moment plugin not available. return data as is.
 	};
 });
+
+// {{#loop 12}}
+//   <output>
+// {{/loop}}
+Handlebars.registerHelper('loop', function(count, options) {
+	var out = "";
+
+	while (count--) {
+		out+= options.fn();
+	}
+
+	return out;
+});

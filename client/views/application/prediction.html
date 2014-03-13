@@ -18,12 +18,33 @@
 			<h3 class="panel-title">Ennusta playoffide tulemused</h3>
 		</div>
 		<div class="panel-body">
-			<fieldset class="well well-sm clearfix">
+			<fieldset class="well well-sm clearfix fieldsetx2">
 				<legend>
 					Kes jõuavad nende võistkondade hulgast kaheksandikfinaali?
 				</legend>
-				<div class="btn-group btn-group-xs" name="stage5" data-toggle="buttons">
+				<div class="btn-group btn-group-xs" name="stage6" data-toggle="buttons">
 					{{#each competition.teams}}
+						<label class="btn btn-primary {{isChecked 5}}" style="margin-left:-1px;">
+							{{> playOff}}
+						</label>
+					{{/each}}
+				</div>
+			</fieldset>
+			<fieldset class="well well-sm clearfix fieldsetx1">
+				<legend>
+					Kes jõuavad nende võistkondade hulgast veerandfinaali?
+				</legend>
+				<div class="background-text-2">
+					{{setNumber 16}}
+					{{#each numbers}}
+						<div class="background-number">
+							{{value}}
+						</div>
+					{{/each}}
+				</div>
+
+				<div class="btn-group btn-group-xs flagButtons" name="stage5" data-toggle="buttons">
+					{{#each playoffStage 5}}
 						<label class="btn btn-primary {{isChecked 4}}" style="margin-left:-1px;">
 							{{> playOff}}
 						</label>
@@ -31,18 +52,85 @@
 				</div>
 
 			</fieldset>
-			<fieldset class="well well-sm clearfix">
+			<fieldset class="well well-sm clearfix fieldsetx1">
 				<legend>
-					Kes jõuavad nende võistkondade hulgast veerandfinaali?
+					Kes jõuavad nende võistkondade hulgast poolfinaali?
 				</legend>
-				<div class="btn-group btn-group-xs" name="stage4" data-toggle="buttons">
+				<div class="background-text-2">
+					{{setNumber 8}}
+					{{#each numbers}}
+					<div class="background-number">
+						{{value}}
+					</div>
+					{{/each}}
+				</div>
+				<div class="btn-group btn-group-xs flagButtons" name="stage4" data-toggle="buttons">
 					{{#each playoffStage 4}}
 						<label class="btn btn-primary {{isChecked 3}}" style="margin-left:-1px;">
 							{{> playOff}}
 						</label>
 					{{/each}}
 				</div>
-
+			</fieldset>
+			<fieldset class="well well-sm clearfix fieldsetx1">
+				<legend>
+					Kes jõuavad nende võistkondade hulgast finaali?
+				</legend>
+				<div class="background-text-2">
+					{{setNumber 4}}
+					{{#each numbers}}
+					<div class="background-number">
+						{{value}}
+					</div>
+					{{/each}}
+				</div>
+				<div class="btn-group btn-group-xs flagButtons" name="stage3" data-toggle="buttons">
+					{{#each playoffStage 3}}
+						<label class="btn btn-primary {{isChecked 2}}" style="margin-left:-1px;">
+							{{> playOff}}
+						</label>
+					{{/each}}
+				</div>
+			</fieldset>
+			<fieldset class="well well-sm clearfix fieldsetx1">
+				<legend>
+					Kes võidab?
+				</legend>
+				<div class="background-text-2">
+					{{setNumber 2}}
+					{{#each numbers}}
+					<div class="background-number">
+						{{value}}
+					</div>
+					{{/each}}
+				</div>
+				<div class="btn-group btn-group-xs flagButtons" name="stage2" data-toggle="buttons">
+					{{#each playoffStage 2}}
+						<label class="btn btn-primary {{isChecked 1}}" style="margin-left:-1px;">
+							{{> playOff}}
+						</label>
+					{{/each}}
+				</div>
+			</fieldset>
+			<fieldset class="well well-sm clearfix fieldsetx1">
+				<legend>
+					Võitja!
+				</legend>
+				<div class="background-text-2">
+					{{setNumber 1}}
+					{{#each numbers}}
+					<div class="background-number">
+						{{value}}
+					</div>
+					{{/each}}
+				</div>
+				<div class="btn-group btn-group-xs flagButtons" name="stage1" data-toggle="buttons">
+					{{#each playoffStage 1}}
+						<label class="btn btn-primary disabled" style="margin-left:-1px;">
+							{{> playOff}}
+						</label>
+					{{/each}}
+				</div>
 			</fieldset>
 		</div>
 	</div>

@@ -25,15 +25,41 @@ Template.prediction.created = function() {
 		if (Meteor.user()) {
 			var checkbox = $(e.target);
 			var checkboxLabel = checkbox.closest('label');
-			var stage = checkbox.closest('.btn-group');
-			stage = stage.attr('name');
-			console.log(checkboxLabel.hasClass('active'));
+			var stageContainer = checkbox.closest('.btn-group');
+			var countCheck = {
+				5: 16,
+				4: 8,
+				3: 4,
+				2: 2,
+				1: 1
+			};
+			stage = stageContainer.attr('name');
+			stage = stage[stage.length-1] - 1;
+
 			var prediction = {
-				stage: stage[stage.length-1] - 1,
+				stage: stage,
 				key: checkbox.attr('name'),
 				event: Session.get('selectedCompetition').url
 			};
 			if (!checkboxLabel.hasClass('active')) {
+				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url});
+				if (predictions.count() >= countCheck[stage]){
+					console.log(checkboxLabel.attr('class'));
+					checkboxLabel.removeClass('active');
+					console.log(checkboxLabel.attr('class'));
+					if (!stageContainer.hasClass("shake")) {
+						stageContainer.addClass("shake");
+					} else {
+						stageContainer.css('animation-name', 'none');
+						stageContainer.css('-moz-animation-name', 'none');
+						stageContainer.css('-webkit-animation-name', 'none');
+
+						setTimeout(function() {
+							stageContainer.css('-webkit-animation-name', 'shake');
+						}, 0);
+					}
+					return;
+				}
 				Meteor.call(
 					'addPrediction',
 					prediction,
@@ -52,6 +78,17 @@ Template.prediction.created = function() {
 							Errors.throw(error.reason);
 					}
 				);
+				while (prediction.stage >= 1){
+					prediction.stage -= 1;
+					Meteor.call(
+						'removePrediction',
+						prediction,
+						function(error, id) {
+							if (error)
+								Errors.throw(error.reason);
+						}
+					);
+				}
 			}
 		}
 		else {
@@ -94,5 +131,17 @@ Template.predictionPlayoffs.helpers({
 		else {
 			return '';
 		}
+	},
+	setNumber: function(number) {
+		remainingNumber = number;
+	},
+	numbers: function() {
+		var result = new Array();
+		for (var i=0; i < remainingNumber; i++) {
+			result.push({
+				value: remainingNumber - i
+			});
+		}
+		return result;
 	}
 });
