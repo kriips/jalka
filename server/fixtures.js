@@ -661,9 +661,9 @@ if (Competitions.find().count() === 0) {
 				"title": "Iraan",
 				"code": "IRN"
 			}
-		]
-		,
-		isActive: 'yes'
+		],
+		isActive: true,
+		isPredictable: true
 	});
 
 	Competitions.insert({
@@ -894,14 +894,16 @@ if (Competitions.find().count() === 0) {
 				message: 'kõik on ikka veel hästi em'
 			}
 		],
-		isActive: 'no'
+		isActive: false,
+		isPredictable: false
 	});
 
 	Competitions.insert({
 		year: "2010",
 		name: "MM 2010",
 		url: "mm2010",
-		isActive: 'no',
+		isActive: false,
+		isPredictable: false,
 		chart: [
 			{
 				place: "1",
@@ -1180,13 +1182,15 @@ if (Competitions.find().count() === 0) {
 		year: "2008",
 		name: "EM 2008",
 		url: "em2008",
-		isActive: 'no'
+		isActive: false,
+		isPredictable: false
 	});
 
 	Competitions.insert({
 		year: "2006",
 		name: "MM 2006",
 		url: "mm2006",
-		isActive: 'no'
+		isActive: false,
+		isPredictable: false
 	});
 }
