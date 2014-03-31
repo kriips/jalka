@@ -7,6 +7,7 @@ Template.home.events({
 });
 
 Template.home.rendered = function () {
+	console.log('home rendered');
 	if (Session.get('selectedCompetition').isPredictable) {
 		$('a[href="#predict"]').tab('show');
 	}

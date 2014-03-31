@@ -10,16 +10,16 @@
 			<a class="navbar-brand" href="{{pathFor 'home'}}">Seltsi jalkaennustus</a>
 		</div>
 		<div class="navbar-collapse collapse navbar-inverse-collapse">
-			{{yield 'header'}}
+			{{> yield region="header"}}
 			<ul class="nav navbar-nav navbar-right">
-				{{loginButtons align="right"}}
+				{{> loginButtons align="right"}}
 			</ul>
 		</div>
 	</div>
-	{{>meteorErrors}}
+	{{> meteorErrors}}
 	<div class="container">
 		<div id="main" class="row">
-			{{yield}}
+			{{> yield}}
 		</div>
 	</div>
 </template>
