@@ -4,6 +4,9 @@ Router.configure({
 	notFoundTemplate: 'notFound'
 });
 
+Router.onBeforeAction('loading')
+Router.onBeforeAction('dataNotFound')
+
 Router.map(function() {
 	this.route('home', {
 		path: '/',
@@ -33,15 +36,19 @@ Router.map(function() {
 		},
 		data: function() {
 			console.log('entering data');
-
-			var selectedCompetition = Competitions.findOne({url: this.params.url});
-			console.log(this.params.url);
-			Session.set('selectedCompetition', selectedCompetition);
-			document.title = 'S! jalkaennustus: ' + selectedCompetition.name;
-			var templateData = {
-				competition: Competitions.findOne({name: Session.get('selectedCompetition').name})
-			};
-			return templateData;
+			if (this.ready()) {
+				var selectedCompetition = Competitions.findOne({url: this.params.url});
+				console.log(this.params.url);
+				Session.set('selectedCompetition', selectedCompetition);
+				document.title = 'S! jalkaennustus: ' + selectedCompetition.name;
+				var templateData = {
+					competition: Competitions.findOne({name: Session.get('selectedCompetition').name})
+				};
+				return templateData;
+			}
+			else {
+				return false;
+			}
 		}
 	});
 });
