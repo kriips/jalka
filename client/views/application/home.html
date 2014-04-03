@@ -2,13 +2,13 @@
 	<div class="bs-example">
 		<div class="col-md-12">
 			<div class="col-md-3">
+				<ul class="nav nav-pills nav-stacked" data-toggle="pill">
+					<li class="{{activeTab 'predict'}}"><a id="predictLink" href="#predict" data-toggle="tab"><i class="fa fa-bullseye"></i> Ennusta</a></li>
+					<li class="{{activeTab 'watch'}}"><a id="watchLink" href="#watch" data-toggle="tab"><i class="fa fa-beer"></i> Jälgi</a></li>
+				</ul>
 				<div class="jumbotron">
 					<p>Siia tuleb makseinfo</p>
 				</div>
-				<ul class="nav nav-pills" data-toggle="pill">
-					<li class="active"><a href="#predict" data-toggle="tab">Ennusta</a></li>
-					<li><a href="#watch" data-toggle="tab">Jälgi</a></li>
-				</ul>
 				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h3 class="panel-title">Teated</h3>
