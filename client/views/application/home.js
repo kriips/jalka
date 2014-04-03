@@ -1,8 +1,10 @@
 Template.home.events({
 	'click .nav-pills': function(e) {
 //		e.preventDefault();
-		$(e.target).closest('li').addClass('active');
-		console.log($(e.target));
+		var target = $(e.target);
+		target.closest('li').addClass('active');
+		target.tab('show');
+		console.log(target.html());
 	}
 });
 
