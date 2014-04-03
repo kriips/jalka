@@ -6,7 +6,6 @@
 standard-app-packages
 less
 jquery
-iron-router
 accounts-password
 accounts-ui-bootstrap-3
 accounts-facebook
@@ -14,5 +13,6 @@ accounts-google
 moment
 errors
 user-status
-spin
 font-awesome
+loading
+iron-router

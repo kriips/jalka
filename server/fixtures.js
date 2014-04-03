@@ -1193,4 +1193,7 @@ if (Competitions.find().count() === 0) {
 		isActive: false,
 		isPredictable: false
 	});
+
+	console.log('competition count:');
+	console.log(Competitions.find().count());
 }

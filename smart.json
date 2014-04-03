@@ -5,7 +5,6 @@
   },
   "packages": {
     "accounts-ui-bootstrap-dropdown": {},
-    "iron-router": {},
     "accounts-ui-bootstrap-3": {
       "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git"
     },
@@ -13,7 +12,8 @@
     "moment": {},
     "errors": {},
     "user-status": {},
-    "spin": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "loading": {},
+    "iron-router": {}
   }
 }

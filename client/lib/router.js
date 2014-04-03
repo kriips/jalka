@@ -1,6 +1,6 @@
 Router.configure({
 	layoutTemplate: 'layout',
-	loadingTemplate: 'loading',
+	loadingTemplate: 'loadingTemp',
 	notFoundTemplate: 'notFound'
 });
 
@@ -21,16 +21,19 @@ Router.map(function() {
 			'header': {to: 'header'}
 		},
 		waitOn: function() {
-			Meteor.subscribe('usersOnline');
-			Meteor.subscribe('allUsers');
+			console.log('entering waiton');
+			this.subscribe('userStatus');
+			this.subscribe('allUsers');
 			var url = this.params.url;
 			return [
-				Meteor.subscribe('competition', {url: url}),
-				Meteor.subscribe('competitions'),
-				Meteor.subscribe('predictions', {event: url})
+				this.subscribe('competition', {url: url}),
+				this.subscribe('competitions'),
+				this.subscribe('predictions', {event: url})
 			];
 		},
 		data: function() {
+			console.log('entering data');
+
 			var selectedCompetition = Competitions.findOne({url: this.params.url});
 			console.log(this.params.url);
 			Session.set('selectedCompetition', selectedCompetition);

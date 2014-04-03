@@ -1,4 +1,5 @@
 Meteor.publish('competitions', function() {
+	console.log('publishing competitions');
 	return Competitions.find({
 	},
 	{
@@ -11,14 +12,17 @@ Meteor.publish('competitions', function() {
 });
 
 Meteor.publish('competition', function(options) {
+	console.log('publishing active competition');
 	return Competitions.find({url : options.url});
 });
 
 Meteor.publish('predictions', function(options) {
+	console.log('publishing predictions');
 	return Predictions.find({event : options.event});
 });
 
 Meteor.publish('userStatus', function() {
+	console.log('publishing user status');
 	return Meteor.users.find({
 		"status.online": true
 	},
@@ -30,6 +34,7 @@ Meteor.publish('userStatus', function() {
 });
 
 Meteor.publish('allUsers', function() {
+	console.log('publishing users');
 	return Meteor.users.find({
 	},
 	{
