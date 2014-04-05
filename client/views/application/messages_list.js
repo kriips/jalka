@@ -25,9 +25,11 @@ Template.messagesList.events({
 
 Template.messagesList.helpers({
 	sortMessages: function(messages) {
-		messages = _.sortBy(messages, function(message){
-			return message.timestamp;
-		});
-		return messages.reverse();
+		if (messages){
+			messages = _.sortBy(messages, function(message){
+				return message.timestamp;
+			});
+			return messages.reverse();
+		}
 	}
 });

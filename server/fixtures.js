@@ -4,18 +4,36 @@ if (Competitions.find().count() === 0) {
 		year: "2014",
 		name: "MM 2014",
 		url: "mm2014",
+		maxPredictions: 79,
 		chart: [
 		],
 		messages: [
+		],
+		playoffs: [
 			{
-				timestamp: '2014-01-01 17:10:40',
-				author: 'Mikk',
-				message: 'kõik on hästi'
+				id: 1,
+				points: 7,
+				teams: []
 			},
 			{
-				timestamp: '2014-01-01 17:11:20',
-				author: 'Mikk',
-				message: 'kõik on ikka veel hästi'
+				id: 2,
+				points: 5,
+				teams: []
+			},
+			{
+				id: 3,
+				points: 4,
+				teams: []
+			},
+			{
+				id: 4,
+				points: 3,
+				teams: []
+			},
+			{
+				id: 5,
+				points: 2,
+				teams: []
 			}
 		],
 		fixtures: [

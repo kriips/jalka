@@ -21,6 +21,10 @@ Meteor.methods({
 		);
 
 		return messageId;
+	},
+
+	addResult: function(resultAttributes) {
+		console.log('will be adding a result here');
 	}
 
 });

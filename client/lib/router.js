@@ -4,15 +4,29 @@ Router.configure({
 	notFoundTemplate: 'notFound'
 });
 
-Router.onBeforeAction('loading')
-Router.onBeforeAction('dataNotFound')
-
 Router.map(function() {
 	this.route('home', {
 		path: '/',
 		onBeforeAction: function () {
-			console.log('1st reroute');
 			this.redirect('/comp/mm2014')
+		}
+	});
+
+	this.route('addResult',{
+		path: '/addResult',
+		onBeforeAction: function(pause) {
+			if (!Meteor.user()) {
+				if (Meteor.loggingIn())
+					this.render(this.loadingTemplate);
+				else
+					this.render('accessDenied');
+				pause();
+			}
+			else if (Meteor.user().username !== "Mikk Kard") {
+				this.render('haveToBeMikk');
+				pause();
+			}
+			Session.set('addingResult', true);
 		}
 	});
 
@@ -24,7 +38,6 @@ Router.map(function() {
 			'header': {to: 'header'}
 		},
 		waitOn: function() {
-			console.log('entering waiton');
 			this.subscribe('userStatus');
 			this.subscribe('allUsers');
 			var url = this.params.url;
@@ -35,10 +48,9 @@ Router.map(function() {
 			];
 		},
 		data: function() {
-			console.log('entering data');
+			Session.set('addingResult', false);
 			if (this.ready()) {
 				var selectedCompetition = Competitions.findOne({url: this.params.url});
-				console.log(this.params.url);
 				Session.set('selectedCompetition', selectedCompetition);
 				document.title = 'S! jalkaennustus: ' + selectedCompetition.name;
 				var templateData = {
@@ -53,13 +65,13 @@ Router.map(function() {
 	});
 });
 
-var requireLogin = function() {
-	if (! Meteor.user()) {
+var requireLogin = function(pause) {
+	if (!Meteor.user()) {
 		if (Meteor.loggingIn())
 			this.render(this.loadingTemplate);
 		else
 			this.render('accessDenied');
-		this.stop();
+		pause();
 	}
 }
 

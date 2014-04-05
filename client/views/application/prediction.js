@@ -7,14 +7,33 @@ Template.prediction.created = function() {
 				game: radio.attr('name'),
 				event: Session.get('selectedCompetition').url
 			};
-			Meteor.call(
-				'addPrediction',
-				prediction,
-				function(error, id) {
-					if (error)
-						Errors.throw(error.reason);
-				}
-			);
+			if (Session.get('addingResult')) {
+				Meteor.call(
+					'addResult',
+					prediction,
+					function(error, result) {
+						if (error) {
+							Errors.throw(error.reason);
+						}
+					}
+				);
+			}
+			else {
+				Meteor.call(
+					'addPrediction',
+					prediction,
+					function(error, result) {
+						if (error) {
+							Errors.throw(error.reason);
+						}
+						else {
+							if (result && result.message && result.message == 'predictionCompleted') {
+								alert('prediction completed');
+							}
+						}
+					}
+				);
+			}
 		}
 		else {
 			Errors.throw("Logi palun sisse");
@@ -44,9 +63,7 @@ Template.prediction.created = function() {
 			if (!checkboxLabel.hasClass('active')) {
 				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url});
 				if (predictions.count() >= countCheck[stage]){
-					console.log(checkboxLabel.attr('class'));
 					checkboxLabel.removeClass('active');
-					console.log(checkboxLabel.attr('class'));
 					if (!stageContainer.hasClass("shake")) {
 						stageContainer.addClass("shake");
 					} else {
@@ -63,9 +80,15 @@ Template.prediction.created = function() {
 				Meteor.call(
 					'addPrediction',
 					prediction,
-					function(error, id) {
-						if (error)
+					function(error, result) {
+						if (error) {
 							Errors.throw(error.reason);
+						}
+						else {
+							if (result && result.message && result.message == 'predictionCompleted') {
+								$('#predictionDone').modal('show');
+							}
+						}
 					}
 				);
 			}
