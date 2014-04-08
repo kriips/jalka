@@ -1,4 +1,5 @@
 Template.prediction.created = function() {
+	var action = Session.get('addingResult') ? 'Result' : 'Prediction'
 	$(document.body).on('change.fixtureRadios', 'input:radio', function(e){
 		if (Meteor.user()) {
 			var radio = $(e.target);
@@ -7,33 +8,20 @@ Template.prediction.created = function() {
 				game: radio.attr('name'),
 				event: Session.get('selectedCompetition').url
 			};
-			if (Session.get('addingResult')) {
-				Meteor.call(
-					'addResult',
-					prediction,
-					function(error, result) {
-						if (error) {
-							Errors.throw(error.reason);
+			Meteor.call(
+				'add' + action,
+				prediction,
+				function(error, result) {
+					if (error) {
+						Errors.throw(error.reason);
+					}
+					else {
+						if (result && result.message && result.message == 'predictionCompleted') {
+							alert('prediction completed');
 						}
 					}
-				);
-			}
-			else {
-				Meteor.call(
-					'addPrediction',
-					prediction,
-					function(error, result) {
-						if (error) {
-							Errors.throw(error.reason);
-						}
-						else {
-							if (result && result.message && result.message == 'predictionCompleted') {
-								alert('prediction completed');
-							}
-						}
-					}
-				);
-			}
+				}
+			);
 		}
 		else {
 			Errors.throw("Logi palun sisse");
@@ -78,7 +66,7 @@ Template.prediction.created = function() {
 					return;
 				}
 				Meteor.call(
-					'addPrediction',
+					'add' + action,
 					prediction,
 					function(error, result) {
 						if (error) {
@@ -94,7 +82,7 @@ Template.prediction.created = function() {
 			}
 			else {
 				Meteor.call(
-					'removePrediction',
+					'remove' + action,
 					prediction,
 					function(error, id) {
 						if (error)
@@ -104,7 +92,7 @@ Template.prediction.created = function() {
 				while (prediction.stage >= 1){
 					prediction.stage -= 1;
 					Meteor.call(
-						'removePrediction',
+						'remove' + action,
 						prediction,
 						function(error, id) {
 							if (error)
@@ -126,10 +114,15 @@ Template.prediction.destroyed = function(){
 
 Template.fixture.helpers({
 	isSelected: function(key) {
-		var prediction = Predictions.findOne({userId: Meteor.userId(), fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url});
 		var returnVal = '';
-		if (prediction) {
-			returnVal = key == prediction.prediction ? 'active': '';
+		if (Session.get('addingResult')) {
+			returnVal = key == this.result? 'active': '';
+		}
+		else {
+			var prediction = Predictions.findOne({userId: Meteor.userId(), fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url});
+			if (prediction) {
+				returnVal = key == prediction.prediction ? 'active': '';
+			}
 		}
 
 		return returnVal;
@@ -143,16 +136,45 @@ Template.fixture.helpers({
 
 Template.predictionPlayoffs.helpers({
 	playoffStage: function(stage) {
-		var teams = Predictions.find({userId: Meteor.userId(), stage: stage, event: Session.get('selectedCompetition').url});
+		var teams;
+		if (Session.get('addingResult')) {
+			var competition = Session.get('selectedCompetition')
+			competition.playoffs.forEach(function(playoff) {
+				if (playoff.id === stage) {
+					teams = playoff.teams;
+					console.log(teams);
+				}
+			});
+		}
+		else {
+			teams = Predictions.find({userId: Meteor.userId(), stage: stage, event: Session.get('selectedCompetition').url});
+		}
 		return teams;
 	},
 	isChecked: function(stage) {
-		var prediction = Predictions.findOne({userId: Meteor.userId(), key: this.key, stage: stage, event: Session.get('selectedCompetition').url});
-		if (prediction) {
-			return 'active';
+		if (Session.get('addingResult')) {
+			var competition = Session.get('selectedCompetition')
+			competition.playoffs.forEach(function(playoff) {
+				if (playoff.id === stage) {
+					playoff.teams.forEach(function(team) {
+//						console.log(team.key);
+//						console.log(this);
+						if (team.key === this.key) {
+							return 'active';
+						}
+					});
+				}
+			});
+			return '';
 		}
 		else {
-			return '';
+			var prediction = Predictions.findOne({userId: Meteor.userId(), key: this.key, stage: stage, event: Session.get('selectedCompetition').url});
+			if (prediction) {
+				return 'active';
+			}
+			else {
+				return '';
+			}
 		}
 	},
 	setNumber: function(number) {

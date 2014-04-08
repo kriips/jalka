@@ -77,7 +77,7 @@ Meteor.methods({
 			if (Competitions.find({url: predictionAttributes.event, "participants.userId": user._id}).count() == 0){
 				Competitions.update(competition._id, {$addToSet: {participants: {userId: user._id}}});
 			}
-			refreshChart(competition);
+//			refreshChart(competition);
 			return({message: 'predictionCompleted'});
 		}
 
