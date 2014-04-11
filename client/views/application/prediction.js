@@ -1,5 +1,6 @@
 Template.prediction.created = function() {
-	var action = Session.get('addingResult') ? 'Result' : 'Prediction'
+	var action = Session.get('addingResult') ? 'Result' : 'Prediction';
+	console.log(action);
 	$(document.body).on('change.fixtureRadios', 'input:radio', function(e){
 		if (Meteor.user()) {
 			var radio = $(e.target);
@@ -50,7 +51,7 @@ Template.prediction.created = function() {
 			};
 			if (!checkboxLabel.hasClass('active')) {
 				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url});
-				if (predictions.count() >= countCheck[stage]){
+				if (predictions.count() >= countCheck[stage] && action !== 'Result') {
 					checkboxLabel.removeClass('active');
 					if (!stageContainer.hasClass("shake")) {
 						stageContainer.addClass("shake");
@@ -153,19 +154,24 @@ Template.predictionPlayoffs.helpers({
 	},
 	isChecked: function(stage) {
 		if (Session.get('addingResult')) {
-			var competition = Session.get('selectedCompetition')
+			var checkedTeam = this;
+			var competition = Session.get('selectedCompetition');
+			var found = false;
 			competition.playoffs.forEach(function(playoff) {
 				if (playoff.id === stage) {
 					playoff.teams.forEach(function(team) {
-//						console.log(team.key);
-//						console.log(this);
-						if (team.key === this.key) {
-							return 'active';
+						if (team.key === checkedTeam.key) {
+							found = true;
 						}
 					});
 				}
 			});
-			return '';
+			if (!found) {
+				return '';
+			}
+			else {
+				return 'active';
+			}
 		}
 		else {
 			var prediction = Predictions.findOne({userId: Meteor.userId(), key: this.key, stage: stage, event: Session.get('selectedCompetition').url});

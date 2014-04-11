@@ -71,9 +71,9 @@ Meteor.methods({
 
 	removeResult: function (resultAttributes) {
 		var user = Meteor.user();
+		var competition = Competitions.findOne({url: resultAttributes.event});
 		if (!user)
 			throw new Meteor.Error(401, "You need to login to delete a result");
-
 		Competitions.update(
 			{_id: competition._id, "playoffs.id": parseInt(resultAttributes.stage)},
 			{$pull: {"playoffs.$.teams": {key: resultAttributes.key}}}
