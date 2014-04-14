@@ -1,6 +1,6 @@
 Template.prediction.created = function() {
 	var action = Session.get('addingResult') ? 'Result' : 'Prediction';
-	console.log(action);
+//	console.log(action);
 	$(document.body).on('change.fixtureRadios', 'input:radio', function(e){
 		if (Meteor.user()) {
 			var radio = $(e.target);
@@ -143,7 +143,7 @@ Template.predictionPlayoffs.helpers({
 			competition.playoffs.forEach(function(playoff) {
 				if (playoff.id === stage) {
 					teams = playoff.teams;
-					console.log(teams);
+//					console.log(teams);
 				}
 			});
 		}

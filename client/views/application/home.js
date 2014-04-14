@@ -4,12 +4,12 @@ Template.home.events({
 Template.home.helpers({
 	activeTab: function(name) {
 		if (name == 'predict') {
-			console.log('predict tab:');
-			console.log(Session.get('selectedCompetition').isPredictable ? 'active' : 'disabled');
+//			console.log('predict tab:');
+//			console.log(Session.get('selectedCompetition').isPredictable ? 'active' : 'disabled');
 			return Session.get('selectedCompetition').isPredictable ? 'active' : 'disabled';
 		}
 		else {
-			console.log(Session.get('selectedTab'));
+//			console.log(Session.get('selectedTab'));
 			return name == Session.get('selectedTab') ? 'active' : '';
 		}
 	},
