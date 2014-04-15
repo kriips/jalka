@@ -1,23 +1,42 @@
 <template name="chart">
 	{{#each competition.chart.latest}}
-		{{> user}}
+	{{> user}}
 	{{/each}}
 </template>
 
 <template name="user">
-	<h4>
-		{{#if currentUser}}
-			<span class="label label-warning">{{>chartRow}}</span>
-		{{else}}
-			{{#if onlineUser}}
-				<span class="label label-success">{{>chartRow}}</span>
-			{{else}}
-				<span class="label label-default">{{>chartRow}}</span>
-			{{/if}}
-		{{/if}}
-	</h4>
+	<div class="col-md-3">
+		<h4>
+			<div class="btn-group" data-toggle="buttons">
+				{{#if currentUser}}
+				<label class="active btn btn-warning">
+					<input type="radio" name="chart" id="{{_id}}">
+					{{>chartRow}}
+				</label>
+				{{else}}
+					{{#if onlineUser}}
+					<label class="btn btn-success">
+						<input type="radio" name="chart" id="{{_id}}">
+						{{>chartRow}}
+					</label>
+					{{else}}
+					<label class="btn btn-default">
+						<input type="radio" name="chart" id="{{_id}}">
+						{{>chartRow}}
+					</label>
+					{{/if}}
+				{{/if}}
+			</div>
+		</h4>
+	</div>
+	<div class="col-md-9">
+		<div>
+			<canvas id="resultChart" style="width:565px; height:400px;"></canvas>
+		</div>
+
+	</div>
 </template>
 
 <template name="chartRow">
-	{{place}}. {{username}}: {{points}}
+	{{place}}. {{username}}: {{score}}
 </template>
