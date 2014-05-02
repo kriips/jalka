@@ -2,7 +2,7 @@
   "meteor": {
     "git": "https://github.com/meteor/meteor.git",
     "branch": "master",
-    "commit": "886c38bd34ea795a5886297d4c6300816bc85770"
+    "commit": "399629e941b088bbfce7bf902915491e04e43de4"
   },
   "dependencies": {
     "basePackages": {
@@ -18,10 +18,7 @@
       "font-awesome": {},
       "loading": {},
       "iron-router": {},
-      "dxchartjs": {
-        "git": "https://github.com/dandv/dxchartjs.git",
-        "branch": "master"
-      }
+      "chartjs": {}
     },
     "packages": {
       "accounts-ui-bootstrap-dropdown": {
@@ -41,8 +38,8 @@
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
-        "tag": "v2.5.1",
-        "commit": "8c9bc5d3fc96705057737cb9743d555417f6e551"
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "errors": {
         "git": "https://github.com/tmeasday/meteor-errors.git",
@@ -51,8 +48,8 @@
       },
       "user-status": {
         "git": "https://github.com/mizzao/meteor-user-status.git",
-        "tag": "v0.3.4",
-        "commit": "741df5e3304807ba42fbe0aca5b8251c5683e1f7"
+        "tag": "v0.4.0",
+        "commit": "e2a1c7a4075f28b87b361387688e083a4b047a08"
       },
       "font-awesome": {
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
@@ -66,28 +63,23 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.7.0",
-        "commit": "05f34bc48c4cad9fdaa366c1ddcabe6980232ece"
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
       },
-      "dxchartjs": {
-        "git": "https://github.com/dandv/dxchartjs.git",
-        "branch": "master",
-        "commit": "8aea1c503073b9647c96fa55bf8fc78a28f7cb49"
+      "chartjs": {
+        "git": "https://github.com/donskifarrell/meteor-chartjs.git",
+        "tag": "v0.0.4",
+        "commit": "9d2adcd1de3728c8227e8eb7da0dcb2e0df21d0b"
       },
       "timesync": {
         "git": "https://github.com/mizzao/meteor-timesync.git",
-        "tag": "v0.1.5",
-        "commit": "3ee7eb21f60650de2ca32661b7c964e464e578e3"
+        "tag": "v0.1.6",
+        "commit": "83067433f511bc13a11ae8c87e9a4d331256915e"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
-        "tag": "v0.2.2",
-        "commit": "8bc53798fe5965669ae67c72f91829fcfdceabfd"
-      },
-      "globalize-meteor": {
-        "git": "https://github.com/ckir/globalize-meteor.git",
-        "tag": "v0.0.1",
-        "commit": "c465ddd42431f549c2e664fe80b2b747f930c03c"
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
       }
     }
   }

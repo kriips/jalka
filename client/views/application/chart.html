@@ -1,40 +1,39 @@
 <template name="chart">
-	{{#each competition.chart.latest}}
-	{{> user}}
-	{{/each}}
+	<div class="results">
+		<div class="col-md-3">
+			{{#each competition.chart.latest}}
+				{{> user}}
+			{{/each}}
+		</div>
+	</div>
+	<div class="col-md-9">
+		<canvas id="userChart" width="560" height="300"></canvas>
+	</div>
 </template>
 
 <template name="user">
-	<div class="col-md-3">
-		<h4>
-			<div class="btn-group" data-toggle="buttons">
-				{{#if currentUser}}
-				<label class="active btn btn-warning">
+	<h4>
+		<div class="btn-group" data-toggle="buttons">
+			{{#if currentUser}}
+			<label class="active btn btn-warning">
+				<input type="radio" name="chart" id="{{_id}}">
+				{{>chartRow}}
+			</label>
+			{{else}}
+				{{#if onlineUser}}
+				<label class="btn btn-success">
 					<input type="radio" name="chart" id="{{_id}}">
 					{{>chartRow}}
 				</label>
 				{{else}}
-					{{#if onlineUser}}
-					<label class="btn btn-success">
-						<input type="radio" name="chart" id="{{_id}}">
-						{{>chartRow}}
-					</label>
-					{{else}}
-					<label class="btn btn-default">
-						<input type="radio" name="chart" id="{{_id}}">
-						{{>chartRow}}
-					</label>
-					{{/if}}
+				<label class="btn btn-default">
+					<input type="radio" name="chart" id="{{_id}}">
+					{{>chartRow}}
+				</label>
 				{{/if}}
-			</div>
-		</h4>
-	</div>
-	<div class="col-md-9">
-		<div>
-			<canvas id="resultChart" style="width:565px; height:400px;"></canvas>
+			{{/if}}
 		</div>
-
-	</div>
+	</h4>
 </template>
 
 <template name="chartRow">

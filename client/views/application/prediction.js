@@ -1,35 +1,36 @@
-Template.prediction.created = function() {
+Template.prediction.rendered = function() {
 	var action = Session.get('addingResult') ? 'Result' : 'Prediction';
 //	console.log(action);
-	$(document.body).on('change.fixtureRadios', 'input:radio', function(e){
+	$('.fixtures').on('change.fixtureRadios', 'input:radio', function(e){
 		if (Meteor.user()) {
 			var radio = $(e.target);
-			var prediction = {
-				result : radio.val(),
-				game: radio.attr('name'),
-				event: Session.get('selectedCompetition').url
-			};
-			Meteor.call(
-				'add' + action,
-				prediction,
-				function(error, result) {
-					if (error) {
-						Errors.throw(error.reason);
-					}
-					else {
-						if (result && result.message && result.message == 'predictionCompleted') {
-							alert('prediction completed');
+			if (radio.attr('name').indexOf('fixture') !== -1) {
+				var prediction = {
+					result : radio.val(),
+					game: radio.attr('name'),
+					event: Session.get('selectedCompetition').url
+				};
+				Meteor.call(
+					'add' + action,
+					prediction,
+					function(error, result) {
+						if (error) {
+							Errors.throw(error.reason);
+						}
+						else {
+							if (result && result.message && result.message == 'predictionCompleted') {
+							}
 						}
 					}
-				}
-			);
+				);
+			}
 		}
 		else {
 			Errors.throw("Logi palun sisse");
 		}
 	});
 
-	$(document.body).on('change.playoffCheckboxes', 'input:checkbox', function(e){
+	$('.playoffs').on('change', 'input:checkbox', function(e){
 		if (Meteor.user()) {
 			var checkbox = $(e.target);
 			var checkboxLabel = checkbox.closest('label');
@@ -50,7 +51,7 @@ Template.prediction.created = function() {
 				event: Session.get('selectedCompetition').url
 			};
 			if (!checkboxLabel.hasClass('active')) {
-				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url});
+				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url, userId: Meteor.user()._id});
 				if (predictions.count() >= countCheck[stage] && action !== 'Result') {
 					checkboxLabel.removeClass('active');
 					if (!stageContainer.hasClass("shake")) {
@@ -66,20 +67,22 @@ Template.prediction.created = function() {
 					}
 					return;
 				}
-				Meteor.call(
-					'add' + action,
-					prediction,
-					function(error, result) {
-						if (error) {
-							Errors.throw(error.reason);
-						}
-						else {
-							if (result && result.message && result.message == 'predictionCompleted') {
-								$('#predictionDone').modal('show');
+				else {
+					Meteor.call(
+						'add' + action,
+						prediction,
+						function(error, result) {
+							if (error) {
+								Errors.throw(error.reason);
+							}
+							else {
+								if (result && result.message && result.message == 'predictionCompleted') {
+									$('#predictionDone').modal('show');
+								}
 							}
 						}
-					}
-				);
+					);
+				}
 			}
 			else {
 				Meteor.call(

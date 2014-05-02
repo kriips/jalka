@@ -1,13 +1,13 @@
-Template.chart.allUsers = function() {
-	var users =  Meteor.users.find({});
+Template.chart.allUsers = function () {
+	var users = Meteor.users.find({});
 	return users;
 };
 
-Template.user.currentUser = function() {
+Template.user.currentUser = function () {
 	return this.username === Meteor.user().username;
 };
 
-Template.user.onlineUser = function() {
+Template.user.onlineUser = function () {
 	var user = Meteor.users.findOne({username: this.username});
 	if (user)
 		return user.status.online;
@@ -15,61 +15,65 @@ Template.user.onlineUser = function() {
 		return false;
 };
 
-Template.user.rendered = function() {
+Template.user.rendered = function () {
 	renderChart();
 }
 
-renderChart = function(data) {
-	console.log('doing the chart');
-	$('#resultChart').dxChart({
-		dataSource: data,
-		commonSeriesSettings: {
-			argumentField: "year"
-		},
-		series: [
-			{ valueField: "europe", name: "Europe" },
-			{ valueField: "americas", name: "Americas" },
-			{ valueField: "africa", name: "Africa" }
-		],
-		argumentAxis:{
-			grid:{
-				visible: true
-			}
-		},
-		tooltip:{
-			enabled: true
-		},
-		title: "Historic, Current and Future Population",
-		legend: {
-			verticalAlignment: "bottom",
-			horizontalAlignment: "center"
-		},
-		commonPaneSettings: {
-			border:{
-				visible: true,
-				right: false
-			}
-		}
+Template.chart.created = function () {
+	if (!Session.get('chartSelectedUser')) {
+		Session.set('chartSelectedUser', Meteor.user()._id);
+	}
+}
+
+renderChart = function (data) {
+	//Get the context of the canvas element we want to select
+	var ctx = document.getElementById("userChart").getContext("2d");
+	var userChart = new Chart(ctx).Line(getChartData(), {
+		scaleOverride: true,
+		scaleSteps: Session.get('selectedCompetition').participants.length + 1 ,
+		scaleStepWidth: 1,
+		scaleStartValue: 0,
+		bezierCurve: false
 	});
 }
 
-getChartData = function (userId) {
-	return [
-	{ year: 1950, europe: 546, americas: 332, africa: 227 },
-	{ year: 1960, europe: 605, americas: 417, africa: 283 },
-	{ year: 1970, europe: 656, americas: 513, africa: 361 },
-	{ year: 1980, europe: 694, americas: 614, africa: 471 },
-	{ year: 1990, europe: 721, americas: 721, africa: 623 },
-	{ year: 2000, europe: 730, americas: 836, africa: 797 },
-	{ year: 2010, europe: 728, americas: 935, africa: 982 },
-	{ year: 2020, europe: 721, americas: 1027, africa: 1189 },
-	{ year: 2030, europe: 704, americas: 1110, africa: 1416 },
-	{ year: 2040, europe: 680, americas: 1178, africa: 1665 },
-	{ year: 2050, europe: 650, americas: 1231, africa: 1937 }
-	];
-
+getChartData = function () {
+	var chartData = {};
+	chartData.labels = new Array();
+	chartData.datasets = new Array();
+	chartData.datasets.push({
+		fillColor : "rgba(220,220,220,0.5)",
+		strokeColor : "rgba(220,220,220,1)",
+		pointColor : "rgba(220,220,220,1)",
+		pointStrokeColor : "#fff"
+	});
+	chartData.datasets[0].data = new Array();
+	Session.get('selectedCompetition').chart.group.forEach(function(game, index) {
+		if (game !== null) {
+			chartData.labels.push(index.toString());
+			game.forEach(function (row) {
+				if (row.userId === Session.get('chartSelectedUser')) {
+					chartData.datasets[0].data.push(row.place);
+				}
+			})
+		}
+	});
+	console.log(chartData);
+	return chartData;
 }
 
 getChartOptions = function () {
 	return {};
 }
+
+$('.results').on('change', 'input:radio', function(e){
+	if (Meteor.user()) {
+		var radio = $(e.target);
+		if (radio.attr('name').indexOf('chart') !== -1) {
+			Session.set('chartSelectedUser', radio.attr('id'));
+		}
+	}
+	else {
+		Errors.throw("Logi palun sisse");
+	}
+});

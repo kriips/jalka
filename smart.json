@@ -15,8 +15,6 @@
     "font-awesome": {},
     "loading": {},
     "iron-router": {},
-	 "dxchartjs" : {
-		 "git": "https://github.com/dandv/dxchartjs.git"
-	 }
+    "chartjs": {}
   }
 }
