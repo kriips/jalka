@@ -53,7 +53,7 @@ Meteor.methods({
 				, function (error, docs) {
 //					console.log(error);
 //					console.log(docs);
-					refreshChart(competition);
+					refreshChart(Competitions.findOne({url: resultAttributes.event}));
 				});
 		}
 		else if (predictionType == 'playoff') {
@@ -63,7 +63,7 @@ Meteor.methods({
 				, function (error, docs) {
 //					console.log(error);
 //					console.log(docs);
-					refreshChart(competition);
+					refreshChart(Competitions.findOne({url: resultAttributes.event}));
 				});
 		}
 
@@ -95,14 +95,21 @@ refreshChart = function (competition) {
 	chart.playoffs = new Array();
 	chart.latest = new Array();
 	var seq = 0;
-
 	competition.participants.forEach(function (user) {
 		var runningScore = 0;
 		var userName = Meteor.users.findOne({_id: user.userId}).username;
 		// group stage scores
-
+		var score = {
+			userId: user.userId,
+			username: userName,
+			score: runningScore
+		};
+		chart.latest[seq] = score;
 		competition.fixtures.forEach(function (fixture) {
 			if (fixture.result) {
+				console.log(userName);
+				console.log(fixture.result);
+				console.log(Predictions.findOne({userId: user.userId, event: competition.url, fixtureId: 'fixture_' + fixture.id}).prediction);
 				if (fixture.result === Predictions.findOne({userId: user.userId, event: competition.url, fixtureId: 'fixture_' + fixture.id}).prediction) {
 					runningScore += 1;
 				}
@@ -110,12 +117,12 @@ refreshChart = function (competition) {
 					chart.group[fixture.id] = new Array();
 				}
 
-				var score = {
+				score = {
 					userId: user.userId,
 					username: userName,
 					score: runningScore
 				};
-
+				console.log(runningScore)
 				chart.group[fixture.id].push(score);
 				chart.latest[seq] = score;
 			}
@@ -133,7 +140,7 @@ refreshChart = function (competition) {
 				if (!chart.playoffs[stage.id]) {
 					chart.playoffs[stage.id] = new Array();
 				}
-				var score = {
+				score = {
 					userId: user.userId,
 					username: userName,
 					score: runningScore

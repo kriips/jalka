@@ -1,41 +1,119 @@
 <template name="chart">
-	<div class="results">
+	<div>
 		<div class="col-md-3">
-			{{#each competition.chart.latest}}
-				{{> user}}
-			{{/each}}
+			<h4>
+				<div class="btn-group-vertical results" data-toggle="buttons">
+					{{#each competition.chart.latest}}
+						{{> user}}
+					{{/each}}
+				</div>
+			</h4>
 		</div>
 	</div>
 	<div class="col-md-9">
-		<canvas id="userChart" width="560" height="300"></canvas>
+		{{#if resultsAdded}}
+			<div class="canvas">
+				<canvas height=300 width=575 id="userChart"></canvas>
+			</div>
+		{{/if}}
+		{{> chartPredictions}}
 	</div>
 </template>
 
 <template name="user">
-	<h4>
-		<div class="btn-group" data-toggle="buttons">
-			{{#if currentUser}}
-			<label class="active btn btn-warning">
-				<input type="radio" name="chart" id="{{_id}}">
+	{{#if currentUser}}
+		<label class="active btn btn-warning">
+			{{>chartRow}}
+		</label>
+	{{else}}
+		{{#if onlineUser}}
+			<label class="btn btn-success">
 				{{>chartRow}}
 			</label>
-			{{else}}
-				{{#if onlineUser}}
-				<label class="btn btn-success">
-					<input type="radio" name="chart" id="{{_id}}">
-					{{>chartRow}}
-				</label>
-				{{else}}
-				<label class="btn btn-default">
-					<input type="radio" name="chart" id="{{_id}}">
-					{{>chartRow}}
-				</label>
-				{{/if}}
-			{{/if}}
-		</div>
-	</h4>
+		{{else}}
+			<label class="btn btn-default">
+				{{>chartRow}}
+			</label>
+		{{/if}}
+	{{/if}}
 </template>
 
 <template name="chartRow">
-	{{place}}. {{username}}: {{score}}
+	<input type="radio" name="chart" userId="{{userId}}" username="{{username}}">
+	<div class="clearfix">
+		<span style="float:left;">{{place}}. {{username}}: {{score}}</span>
+	</div>
+</template>
+
+<template name="chartPredictions">
+	<div class="panel panel-default">
+		<div class="panel-heading">Alagrupimängude ennustus ({{selectedUsername}})</div>
+		<table class="table table-condensed table-bordered">
+			{{#each competition.fixtures}}
+				<tr>
+					{{> chartPredictionRow}}
+				</tr>
+			{{/each}}
+		</table>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Playoffide ennustus ({{selectedUsername}})</div>
+		<div class="panel-body">
+			<span class="label label-primary">Kaheksandikfinaalid</span>
+			<div style="margin-top:15px;">
+				{{#each currentPlayoffPredictions 5}}
+					{{> chartPredictionPORow}}
+				{{/each}}
+			</div>
+			<span class="label label-primary">Veerandfinaalid</span>
+			<div style="margin-top:15px;">
+				{{#each currentPlayoffPredictions 4}}
+					{{> chartPredictionPORow}}
+				{{/each}}
+			</div>
+			<span class="label label-primary">Poolfinaalid</span>
+			<div style="margin-top:15px;">
+				{{#each currentPlayoffPredictions 3}}
+					{{> chartPredictionPORow}}
+				{{/each}}
+			</div>
+			<span class="label label-primary">Finaal</span>
+			<div style="margin-top:15px;">
+				{{#each currentPlayoffPredictions 2}}
+					{{> chartPredictionPORow}}
+				{{/each}}
+			</div>
+			<span class="label label-primary">Võitja</span>
+			<div style="margin-top:15px;">
+				{{#each currentPlayoffPredictions 1}}
+					{{> chartPredictionPORow}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="chartPredictionPORow">
+	<span class="{{#if success}}lightGreen{{/if}}">
+		<img src="/img/flags/{{key}}.png" />
+	</span>
+</template>
+
+<template name="chartPredictionRow">
+	<td class="third {{chartPredictionColor team1_key}}">
+		<span class="withFlag">
+			<img src="/img/flags/{{team1_key}}.png" />{{team1_title}}
+		</span>
+	</td>
+	<td class="third center {{chartPredictionColor 'draw'}}">
+		<span>
+			Viik
+		</span>
+	</td>
+	<td class="third {{chartPredictionColor team2_key}}">
+		<span class="withFlag goRight">
+			{{team2_title}} <img src="/img/flags/{{team2_key}}.png" />
+		</span>
+	</td>
+
 </template>
