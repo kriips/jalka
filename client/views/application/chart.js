@@ -16,7 +16,7 @@ Template.user.onlineUser = function () {
 }
 
 Template.chart.created = function () {
-	if (!Session.get('chartSelectedUser')) {
+	if (!Session.get('chartSelectedUser') && Session.get('selectedCompetition').chart.latest) {
 		var selectUser = {};
 		Session.get('selectedCompetition').chart.latest.forEach(function (user, index) {
 			if (!index) {

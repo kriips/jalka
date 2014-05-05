@@ -4,12 +4,9 @@ Template.home.events({
 Template.home.helpers({
 	activeTab: function(name) {
 		if (name == 'predict') {
-//			console.log('predict tab:');
-//			console.log(Session.get('selectedCompetition').isPredictable ? 'active' : 'disabled');
 			return Session.get('selectedCompetition').isPredictable ? 'active' : 'disabled';
 		}
 		else {
-//			console.log(Session.get('selectedTab'));
 			return name == Session.get('selectedTab') ? 'active' : '';
 		}
 	},
@@ -18,6 +15,9 @@ Template.home.helpers({
 	},
 	disableTab: function(name) {
 		return name == 'predict' && (!Session.get('selectedCompetition').isPredictable) ? '' : 'tab';
+	},
+	intro: function (name) {
+		return Session.get('selectedCompetition').intro;
 	}
 });
 
