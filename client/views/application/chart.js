@@ -26,7 +26,6 @@ Template.chart.created = function () {
 				selectUser = user;
 			}
 		});
-		console.log(selectUser);
 		Session.set('chartSelectedUser', {
 			userId: selectUser.userId,
 			username: selectUser.username

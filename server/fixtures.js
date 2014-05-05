@@ -93,7 +93,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "civ",
 				"team1_title": "Côte d'Ivoire",
 				"team2_key": "jpn",
-				"team2_title": "Japan",
+				"team2_title": "Jaapan",
 				"play_at": "2014/06/14",
 				"score1": null,
 				"score2": null
@@ -223,7 +223,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "esp",
 				"team1_title": "Hispaania",
 				"team2_key": "chi",
-				"team2_title": "Chile",
+				"team2_title": "Tšiili",
 				"play_at": "2014/06/18",
 				"score1": null,
 				"score2": null
@@ -251,7 +251,7 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 22,
 				"team1_key": "jpn",
-				"team1_title": "Japan",
+				"team1_title": "Jaapan",
 				"team2_key": "gre",
 				"team2_title": "Kreeka",
 				"play_at": "2014/06/19",
@@ -393,7 +393,7 @@ if (Competitions.find().count() === 0) {
 				"team1_key": "ned",
 				"team1_title": "Holland",
 				"team2_key": "chi",
-				"team2_title": "Chile",
+				"team2_title": "Tšiili",
 				"play_at": "2014/06/23",
 				"score1": null,
 				"score2": null
@@ -401,7 +401,7 @@ if (Competitions.find().count() === 0) {
 			{
 				"id": 37,
 				"team1_key": "jpn",
-				"team1_title": "Japan",
+				"team1_title": "Jaapan",
 				"team2_key": "col",
 				"team2_title": "Kolumbia",
 				"play_at": "2014/06/24",
@@ -642,7 +642,7 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "chi",
-				"title": "Chile",
+				"title": "Tšiili",
 				"code": "CHI"
 			},
 			{
@@ -667,7 +667,7 @@ if (Competitions.find().count() === 0) {
 			},
 			{
 				"key": "jpn",
-				"title": "Japan",
+				"title": "Jaapan",
 				"code": "JPN"
 			},
 			{

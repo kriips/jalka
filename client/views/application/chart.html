@@ -12,8 +12,12 @@
 	</div>
 	<div class="col-md-9">
 		{{#if resultsAdded}}
-			<div class="canvas">
-				<canvas height=300 width=575 id="userChart"></canvas>
+			<div class="clearfix" style="padding-bottom: 20px;">
+				<div class="vertical-text chartYLabel clearfix">Koht</div>
+				<div class="canvas">
+					<canvas height=300 width=540 id="userChart"></canvas>
+				</div>
+				<div style="position:relative; float:left; left: 230px;">Mäng/playoffi faas</div>
 			</div>
 			{{> chartPredictions}}
 		{{/if}}
