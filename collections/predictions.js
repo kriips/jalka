@@ -58,6 +58,7 @@ Meteor.methods({
 				Predictions.insert({
 						userId: user._id,
 						key: predictionAttributes.key,
+						title: predictionAttributes.title,
 						stage: predictionAttributes.stage,
 						event: predictionAttributes.event
 					},

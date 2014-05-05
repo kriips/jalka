@@ -9,7 +9,6 @@
 			{{/each}}
 		</div>
 	</div>
-
 </template>
 
 <template name="predictionPlayoffs">
@@ -137,9 +136,9 @@
 </template>
 
 <template name="playOff">
-	<input type="checkbox" name="{{key}}" class="playoffCheckboxes">
+	<input type="checkbox" name="{{key}}" title="{{title}}" class="playoffCheckboxes">
 	<span class="withFlag">
-		<img src="/img/flags/{{key}}.png" />
+		<img src="/img/flags/{{key}}.png" data-toggle="tooltip" data-placement="top" title="{{title}}" />
 	</span>
 </template>
 

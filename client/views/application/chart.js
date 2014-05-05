@@ -50,15 +50,21 @@ Template.chart.rendered = function () {
 		}
 	});
 	Deps.autorun(function () {
-		if (Session.get('selectedCompetition').chart.group) {
+		if (Session.get('selectedCompetition').chart && Session.get('selectedCompetition').chart.group) {
 			renderChart();
 		}
 	});
 }
 
+Template.user.helpers({
+	'isUserSelected': function () {
+		return this.userId === Session.get('chartSelectedUser').userId ? 'active' : '';
+	}
+});
+
 Template.chart.helpers({
 	'resultsAdded': function () {
-		return Session.get('selectedCompetition').chart.group ? Session.get('selectedCompetition').chart.group.length > 0 : false;
+		return Session.get('selectedCompetition').chart && Session.get('selectedCompetition').chart.group ? Session.get('selectedCompetition').chart.group.length > 0 : false;
 	}
 });
 
@@ -89,13 +95,12 @@ Template.chartPredictions.helpers({
 			});
 			returnValues.push({
 				key: prediction.key,
-				success : success
+				success: success
 			});
 		});
 		return returnValues;
 	},
 	'selectedUsername': function () {
-		console.log('returning selected username');
 		return Session.get('chartSelectedUser').username;
 	}
 });
@@ -140,7 +145,7 @@ getChartData = function () {
 		});
 	}
 	if (Session.get('selectedCompetition').chart.playoffs) {
-		var stageLabels = ['', '1/16', '1/8', '1/4', '1/2', 'F'];
+		var stageLabels = ['', 'F', '1/2', '1/4', '1/8', '1/16'];
 		Session.get('selectedCompetition').chart.playoffs.forEach(function (game, index) {
 			if (game !== null) {
 				chartData.labels.push(stageLabels[index]);

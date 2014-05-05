@@ -48,6 +48,7 @@ Template.prediction.rendered = function() {
 			var prediction = {
 				stage: stage,
 				key: checkbox.attr('name'),
+				title: checkbox.attr('title'),
 				event: Session.get('selectedCompetition').url
 			};
 			if (!checkboxLabel.hasClass('active')) {

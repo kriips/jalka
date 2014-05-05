@@ -89,7 +89,6 @@ Meteor.methods({
 
 refreshChart = function (competition) {
 	console.log('refreshing chart');
-	Competitions.update(competition._id, {$unset: {chart: ""}});
 	var chart = {};
 	chart.group = new Array();
 	chart.playoffs = new Array();
@@ -107,9 +106,6 @@ refreshChart = function (competition) {
 		chart.latest[seq] = score;
 		competition.fixtures.forEach(function (fixture) {
 			if (fixture.result) {
-				console.log(userName);
-				console.log(fixture.result);
-				console.log(Predictions.findOne({userId: user.userId, event: competition.url, fixtureId: 'fixture_' + fixture.id}).prediction);
 				if (fixture.result === Predictions.findOne({userId: user.userId, event: competition.url, fixtureId: 'fixture_' + fixture.id}).prediction) {
 					runningScore += 1;
 				}
@@ -122,7 +118,6 @@ refreshChart = function (competition) {
 					username: userName,
 					score: runningScore
 				};
-				console.log(runningScore)
 				chart.group[fixture.id].push(score);
 				chart.latest[seq] = score;
 			}
@@ -133,7 +128,7 @@ refreshChart = function (competition) {
 		competition.playoffs.forEach(function (stage) {
 			if (stage.teams.length > 0) {
 				stage.teams.forEach(function (team) {
-					if (Predictions.findOne({userId: user.userId, event: competition.url, stage: stage.id, key: team})) {
+					if (Predictions.findOne({userId: user.userId, event: competition.url, stage: stage.id, key: team.key})) {
 						runningScore += stage.points;
 					}
 				})
@@ -155,8 +150,6 @@ refreshChart = function (competition) {
 	calculatePlaces(chart.group);
 	calculatePlaces(chart.playoffs);
 	calculatePlaces([chart.latest]);
-	console.log(chart);
-
 	Competitions.update(competition._id, {$set: {chart: chart}});
 }
 
@@ -172,6 +165,5 @@ calculatePlaces = function (item) {
 		fixture.forEach(function (row) {
 			row.place = points.indexOf(row.score) + 1;
 		})
-		console.log(fixture);
 	})
 }

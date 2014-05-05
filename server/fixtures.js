@@ -1,5 +1,5 @@
 if (Competitions.find().count() === 0) {
-	console.log ('inserting competitions');
+	console.log('inserting competitions');
 	Competitions.insert({
 		year: "2014",
 		name: "MM 2014",
@@ -688,218 +688,220 @@ if (Competitions.find().count() === 0) {
 		year: "2012",
 		name: "EM 2012",
 		url: "em2012",
-		chart: [
-			{
-				place: "1",
-				username: "Erki Heinsaar",
-				points: "50"
-			},
-			{
-				place: "2",
-				username: "Sander Lehtmets",
-				points: "44"
-			},
-			{
-				place: "3-4",
-				username: "Raul Varul",
-				points: "43"
-			},
-			{
-				place: "3-4",
-				username: "Toomas Gross",
-				points: "43"
-			},
-			{
-				place: "5",
-				username: "Ott Järvela",
-				points: "41"
-			},
-			{
-				place: "6",
-				username: "Mikk Kard",
-				points: "40"
-			},
-			{
-				place: "7-9",
-				username: "Madis Raaper",
-				points: "39"
-			},
-			{
-				place: "7-9",
-				username: "Martin Häidberg",
-				points: "39"
-			},
-			{
-				place: "7-9",
-				username: "Raimo Tropp",
-				points: "39"
-			},
-			{
-				place: "10-11",
-				username: "Kaspar Arro",
-				points: "37"
-			},
-			{
-				place: "10-11",
-				username: "Tõnn Tiidemann",
-				points: "37"
-			},
-			{
-				place: "12",
-				username: "Hendrik Vosman",
-				points: "36"
-			},
-			{
-				place: "13-15",
-				username: "Greg Kööp",
-				points: "34"
-			},
-			{
-				place: "13-15",
-				username: "Kristjan Kõljalg",
-				points: "34"
-			},
-			{
-				place: "13-15",
-				username: "Marko Odamus",
-				points: "34"
-			},
-			{
-				place: "16-18",
-				username: "Mihkel Must",
-				points: "33"
-			},
-			{
-				place: "16-18",
-				username: "Ragnar Õun",
-				points: "33"
-			},
-			{
-				place: "16-18",
-				username: "Toomas Aasmäe",
-				points: "33"
-			},
-			{
-				place: "19-23",
-				username: "Conan",
-				points: "32"
-			},
-			{
-				place: "19-23",
-				username: "Paul Korrovits",
-				points: "32"
-			},
-			{
-				place: "19-23",
-				username: "Mihkel Allik",
-				points: "32"
-			},
-			{
-				place: "19-23",
-				username: "Mikk Vainik",
-				points: "32"
-			},
-			{
-				place: "19-23",
-				username: "Märt Turk",
-				points: "32"
-			},
-			{
-				place: "24-26",
-				username: "Priit Peipman",
-				points: "31"
-			},
-			{
-				place: "24-26",
-				username: "Raivo Prank",
-				points: "31"
-			},
-			{
-				place: "24-26",
-				username: "Siim Sikk",
-				points: "31"
-			},
-			{
-				place: "27",
-				username: "Tanel Molok",
-				points: "30"
-			},
-			{
-				place: "28-29",
-				username: "Esper Linask",
-				points: "29"
-			},
-			{
-				place: "28-29",
-				username: "Martin Leis",
-				points: "29"
-			},
-			{
-				place: "30-31",
-				username: "Koit",
-				points: "28"
-			},
-			{
-				place: "30-31",
-				username: "Rene Varul",
-				points: "28"
-			},
-			{
-				place: "32",
-				username: "Roger Uusmaa",
-				points: "27"
-			},
-			{
-				place: "33",
-				username: "Siim Tiidemann",
-				points: "26"
-			},
-			{
-				place: "34-35",
-				username: "Hendrik Kuusk",
-				points: "25"
-			},
-			{
-				place: "34-35",
-				username: "Märt Hiietamm",
-				points: "25"
-			},
-			{
-				place: "36-38",
-				username: "Henri Sepp",
-				points: "24"
-			},
-			{
-				place: "36-38",
-				username: "Mart Soidro",
-				points: "24"
-			},
-			{
-				place: "36-38",
-				username: "Siim Valdaru",
-				points: "24"
-			},
-			{
-				place: "39",
-				username: "Claude Kaasik",
-				points: "23"
-			},
-			{
-				place: "40",
-				username: "Jaak ja Silver",
-				points: "22"
-			},
-			{
-				place: "41-42",
-				username: "Kimble",
-				points: "20"
-			},
-			{
-				place: "41-42",
-				username: "Veiko Sammelselg",
-				points: "20"
-			}
-		],
+		chart: {
+			latest: [
+				{
+					place: "1",
+					username: "Erki Heinsaar",
+					points: "50"
+				},
+				{
+					place: "2",
+					username: "Sander Lehtmets",
+					points: "44"
+				},
+				{
+					place: "3-4",
+					username: "Raul Varul",
+					points: "43"
+				},
+				{
+					place: "3-4",
+					username: "Toomas Gross",
+					points: "43"
+				},
+				{
+					place: "5",
+					username: "Ott Järvela",
+					points: "41"
+				},
+				{
+					place: "6",
+					username: "Mikk Kard",
+					points: "40"
+				},
+				{
+					place: "7-9",
+					username: "Madis Raaper",
+					points: "39"
+				},
+				{
+					place: "7-9",
+					username: "Martin Häidberg",
+					points: "39"
+				},
+				{
+					place: "7-9",
+					username: "Raimo Tropp",
+					points: "39"
+				},
+				{
+					place: "10-11",
+					username: "Kaspar Arro",
+					points: "37"
+				},
+				{
+					place: "10-11",
+					username: "Tõnn Tiidemann",
+					points: "37"
+				},
+				{
+					place: "12",
+					username: "Hendrik Vosman",
+					points: "36"
+				},
+				{
+					place: "13-15",
+					username: "Greg Kööp",
+					points: "34"
+				},
+				{
+					place: "13-15",
+					username: "Kristjan Kõljalg",
+					points: "34"
+				},
+				{
+					place: "13-15",
+					username: "Marko Odamus",
+					points: "34"
+				},
+				{
+					place: "16-18",
+					username: "Mihkel Must",
+					points: "33"
+				},
+				{
+					place: "16-18",
+					username: "Ragnar Õun",
+					points: "33"
+				},
+				{
+					place: "16-18",
+					username: "Toomas Aasmäe",
+					points: "33"
+				},
+				{
+					place: "19-23",
+					username: "Conan",
+					points: "32"
+				},
+				{
+					place: "19-23",
+					username: "Paul Korrovits",
+					points: "32"
+				},
+				{
+					place: "19-23",
+					username: "Mihkel Allik",
+					points: "32"
+				},
+				{
+					place: "19-23",
+					username: "Mikk Vainik",
+					points: "32"
+				},
+				{
+					place: "19-23",
+					username: "Märt Turk",
+					points: "32"
+				},
+				{
+					place: "24-26",
+					username: "Priit Peipman",
+					points: "31"
+				},
+				{
+					place: "24-26",
+					username: "Raivo Prank",
+					points: "31"
+				},
+				{
+					place: "24-26",
+					username: "Siim Sikk",
+					points: "31"
+				},
+				{
+					place: "27",
+					username: "Tanel Molok",
+					points: "30"
+				},
+				{
+					place: "28-29",
+					username: "Esper Linask",
+					points: "29"
+				},
+				{
+					place: "28-29",
+					username: "Martin Leis",
+					points: "29"
+				},
+				{
+					place: "30-31",
+					username: "Koit",
+					points: "28"
+				},
+				{
+					place: "30-31",
+					username: "Rene Varul",
+					points: "28"
+				},
+				{
+					place: "32",
+					username: "Roger Uusmaa",
+					points: "27"
+				},
+				{
+					place: "33",
+					username: "Siim Tiidemann",
+					points: "26"
+				},
+				{
+					place: "34-35",
+					username: "Hendrik Kuusk",
+					points: "25"
+				},
+				{
+					place: "34-35",
+					username: "Märt Hiietamm",
+					points: "25"
+				},
+				{
+					place: "36-38",
+					username: "Henri Sepp",
+					points: "24"
+				},
+				{
+					place: "36-38",
+					username: "Mart Soidro",
+					points: "24"
+				},
+				{
+					place: "36-38",
+					username: "Siim Valdaru",
+					points: "24"
+				},
+				{
+					place: "39",
+					username: "Claude Kaasik",
+					points: "23"
+				},
+				{
+					place: "40",
+					username: "Jaak ja Silver",
+					points: "22"
+				},
+				{
+					place: "41-42",
+					username: "Kimble",
+					points: "20"
+				},
+				{
+					place: "41-42",
+					username: "Veiko Sammelselg",
+					points: "20"
+				}
+			]
+		},
 		messages: [
 			{
 				timestamp: '2012-01-01 17:10',
@@ -922,278 +924,280 @@ if (Competitions.find().count() === 0) {
 		url: "mm2010",
 		isActive: false,
 		isPredictable: false,
-		chart: [
-			{
-				place: "1",
-				username: 'Mikk Kard',
-				points: 99
-			},
-			{
-				place: "2-3",
-				username: 'Edvard Garder',
-				points: 88
-			},
-			{
-				place: "2-3",
-				username: 'Rene Varul',
-				points: 88
-			},
-			{
-				place: "4",
-				username: 'Jaan Roos',
-				points: 86
-			},
-			{
-				place: "5",
-				username: 'Ott Järvela',
-				points: 84
-			},
-			{
-				place: "6-7",
-				username: 'Hans Lõugas',
-				points: 81
-			},
-			{
-				place: "6-7",
-				username: 'kimble',
-				points: 81
-			},
-			{
-				place: "8-9",
-				username: 'Martin Leis',
-				points: 79
-			},
-			{
-				place: "8-9",
-				username: 'Paul Korrovits',
-				points: 79
-			},
-			{
-				place: "10-12",
-				username: 'Krister Tüllinen',
-				points: 77
-			},
-			{
-				place: "10-12",
-				username: 'Martin Aadamsoo',
-				points: 77
-			},
-			{
-				place: "10-12",
-				username: 'Siim Sikk',
-				points: 77
-			},
-			{
-				place: "13",
-				username: 'Taavi Tuvikene',
-				points: 76
-			},
-			{
-				place: "14",
-				username: 'Kõige Sagedasem',
-				points: 75
-			},
-			{
-				place: "15-17",
-				username: 'Allan Kaldoja',
-				points: 73
-			},
-			{
-				place: "15-17",
-				username: 'Indrek Mihhels',
-				points: 73
-			},
-			{
-				place: "15-17",
-				username: 'Märt Hiietamm',
-				points: 73
-			},
-			{
-				place: "18-19",
-				username: 'Esper Linask',
-				points: 72
-			},
-			{
-				place: "18-19",
-				username: 'Raol Kallas',
-				points: 72
-			},
-			{
-				place: "20-22",
-				username: 'Juhan Nöps',
-				points: 71
-			},
-			{
-				place: "20-22",
-				username: 'Roger Uusmaa',
-				points: 71
-			},
-			{
-				place: "20-22",
-				username: 'Veiko Sammelselg',
-				points: 71
-			},
-			{
-				place: "23-25",
-				username: 'Maanus Vinni',
-				points: 70
-			},
-			{
-				place: "23-25",
-				username: 'Martin Häidberg',
-				points: 70
-			},
-			{
-				place: "23-25",
-				username: 'Sven Tarum',
-				points: 70
-			},
-			{
-				place: "26-30",
-				username: 'Madis Raaper',
-				points: 69
-			},
-			{
-				place: "26-30",
-				username: 'Mart Raukas',
-				points: 69
-			},
-			{
-				place: "26-30",
-				username: 'Siim Tiidemann',
-				points: 69
-			},
-			{
-				place: "26-30",
-				username: 'Martin Öövel',
-				points: 69
-			},
-			{
-				place: "26-30",
-				username: 'Raivo Prank',
-				points: 69
-			},
-			{
-				place: "31-34",
-				username: 'Erki Heinsaar',
-				points: 68
-			},
-			{
-				place: "31-34",
-				username: 'Mikk Vainik',
-				points: 68
-			},
-			{
-				place: "31-34",
-				username: 'Priit Peipman',
-				points: 68
-			},
-			{
-				place: "31-34",
-				username: 'Toomas Gross',
-				points: 68
-			},
-			{
-				place: "35-39",
-				username: 'Claude Kaasik',
-				points: 67
-			},
-			{
-				place: "35-39",
-				username: 'Karl-Kristjan Koit',
-				points: 67
-			},
-			{
-				place: "35-39",
-				username: 'Martin Simmermann',
-				points: 67
-			},
-			{
-				place: "35-39",
-				username: 'Rainer Randmeri',
-				points: 67
-			},
-			{
-				place: "35-39",
-				username: 'Toomas Kiho',
-				points: 67
-			},
-			{
-				place: "40-42",
-				username: 'Henri Sepp',
-				points: 66
-			},
-			{
-				place: "40-42",
-				username: 'Mart Soidro',
-				points: 66
-			},
-			{
-				place: "40-42",
-				username: 'Rain Eensaar',
-				points: 66
-			},
-			{
-				place: "43",
-				username: 'Madis Vodja',
-				points: 65
-			},
-			{
-				place: "44-46",
-				username: 'Mihkel Allik',
-				points: 64
-			},
-			{
-				place: "44-46",
-				username: 'Toomas Aasmäe',
-				points: 64
-			},
-			{
-				place: "44-46",
-				username: 'Valdur Kadakas',
-				points: 64
-			},
-			{
-				place: "47",
-				username: 'Riho Tamm',
-				points: 63
-			},
-			{
-				place: "48",
-				username: 'Matti Tarum',
-				points: 61
-			},
-			{
-				place: "49",
-				username: 'Raul Varul',
-				points: 58
-			},
-			{
-				place: "50-51",
-				username: 'Kaspar Arro',
-				points: 57
-			},
-			{
-				place: "50-51",
-				username: 'Tanel Kutti',
-				points: 57
-			},
-			{
-				place: "52",
-				username: 'Villu Viidul',
-				points: 56
-			},
-			{
-				place: "53",
-				username: 'Kristjan Teder',
-				points: 54
-			},
-			{
-				place: "54",
-				username: 'Ragnar Õun',
-				points: 52
-			}
-		]
+		chart: {
+			latest: [
+				{
+					place: "1",
+					username: 'Mikk Kard',
+					points: 99
+				},
+				{
+					place: "2-3",
+					username: 'Edvard Garder',
+					points: 88
+				},
+				{
+					place: "2-3",
+					username: 'Rene Varul',
+					points: 88
+				},
+				{
+					place: "4",
+					username: 'Jaan Roos',
+					points: 86
+				},
+				{
+					place: "5",
+					username: 'Ott Järvela',
+					points: 84
+				},
+				{
+					place: "6-7",
+					username: 'Hans Lõugas',
+					points: 81
+				},
+				{
+					place: "6-7",
+					username: 'kimble',
+					points: 81
+				},
+				{
+					place: "8-9",
+					username: 'Martin Leis',
+					points: 79
+				},
+				{
+					place: "8-9",
+					username: 'Paul Korrovits',
+					points: 79
+				},
+				{
+					place: "10-12",
+					username: 'Krister Tüllinen',
+					points: 77
+				},
+				{
+					place: "10-12",
+					username: 'Martin Aadamsoo',
+					points: 77
+				},
+				{
+					place: "10-12",
+					username: 'Siim Sikk',
+					points: 77
+				},
+				{
+					place: "13",
+					username: 'Taavi Tuvikene',
+					points: 76
+				},
+				{
+					place: "14",
+					username: 'Kõige Sagedasem',
+					points: 75
+				},
+				{
+					place: "15-17",
+					username: 'Allan Kaldoja',
+					points: 73
+				},
+				{
+					place: "15-17",
+					username: 'Indrek Mihhels',
+					points: 73
+				},
+				{
+					place: "15-17",
+					username: 'Märt Hiietamm',
+					points: 73
+				},
+				{
+					place: "18-19",
+					username: 'Esper Linask',
+					points: 72
+				},
+				{
+					place: "18-19",
+					username: 'Raol Kallas',
+					points: 72
+				},
+				{
+					place: "20-22",
+					username: 'Juhan Nöps',
+					points: 71
+				},
+				{
+					place: "20-22",
+					username: 'Roger Uusmaa',
+					points: 71
+				},
+				{
+					place: "20-22",
+					username: 'Veiko Sammelselg',
+					points: 71
+				},
+				{
+					place: "23-25",
+					username: 'Maanus Vinni',
+					points: 70
+				},
+				{
+					place: "23-25",
+					username: 'Martin Häidberg',
+					points: 70
+				},
+				{
+					place: "23-25",
+					username: 'Sven Tarum',
+					points: 70
+				},
+				{
+					place: "26-30",
+					username: 'Madis Raaper',
+					points: 69
+				},
+				{
+					place: "26-30",
+					username: 'Mart Raukas',
+					points: 69
+				},
+				{
+					place: "26-30",
+					username: 'Siim Tiidemann',
+					points: 69
+				},
+				{
+					place: "26-30",
+					username: 'Martin Öövel',
+					points: 69
+				},
+				{
+					place: "26-30",
+					username: 'Raivo Prank',
+					points: 69
+				},
+				{
+					place: "31-34",
+					username: 'Erki Heinsaar',
+					points: 68
+				},
+				{
+					place: "31-34",
+					username: 'Mikk Vainik',
+					points: 68
+				},
+				{
+					place: "31-34",
+					username: 'Priit Peipman',
+					points: 68
+				},
+				{
+					place: "31-34",
+					username: 'Toomas Gross',
+					points: 68
+				},
+				{
+					place: "35-39",
+					username: 'Claude Kaasik',
+					points: 67
+				},
+				{
+					place: "35-39",
+					username: 'Karl-Kristjan Koit',
+					points: 67
+				},
+				{
+					place: "35-39",
+					username: 'Martin Simmermann',
+					points: 67
+				},
+				{
+					place: "35-39",
+					username: 'Rainer Randmeri',
+					points: 67
+				},
+				{
+					place: "35-39",
+					username: 'Toomas Kiho',
+					points: 67
+				},
+				{
+					place: "40-42",
+					username: 'Henri Sepp',
+					points: 66
+				},
+				{
+					place: "40-42",
+					username: 'Mart Soidro',
+					points: 66
+				},
+				{
+					place: "40-42",
+					username: 'Rain Eensaar',
+					points: 66
+				},
+				{
+					place: "43",
+					username: 'Madis Vodja',
+					points: 65
+				},
+				{
+					place: "44-46",
+					username: 'Mihkel Allik',
+					points: 64
+				},
+				{
+					place: "44-46",
+					username: 'Toomas Aasmäe',
+					points: 64
+				},
+				{
+					place: "44-46",
+					username: 'Valdur Kadakas',
+					points: 64
+				},
+				{
+					place: "47",
+					username: 'Riho Tamm',
+					points: 63
+				},
+				{
+					place: "48",
+					username: 'Matti Tarum',
+					points: 61
+				},
+				{
+					place: "49",
+					username: 'Raul Varul',
+					points: 58
+				},
+				{
+					place: "50-51",
+					username: 'Kaspar Arro',
+					points: 57
+				},
+				{
+					place: "50-51",
+					username: 'Tanel Kutti',
+					points: 57
+				},
+				{
+					place: "52",
+					username: 'Villu Viidul',
+					points: 56
+				},
+				{
+					place: "53",
+					username: 'Kristjan Teder',
+					points: 54
+				},
+				{
+					place: "54",
+					username: 'Ragnar Õun',
+					points: 52
+				}
+			]
+		}
 	});
 
 	Competitions.insert({

@@ -22,16 +22,16 @@
 
 <template name="user">
 	{{#if currentUser}}
-		<label class="active btn btn-warning">
+		<label class="{{isUserSelected}} btn btn-warning">
 			{{>chartRow}}
 		</label>
 	{{else}}
 		{{#if onlineUser}}
-			<label class="btn btn-success">
+			<label class="{{isUserSelected}} btn btn-success">
 				{{>chartRow}}
 			</label>
 		{{else}}
-			<label class="btn btn-default">
+			<label class="{{isUserSelected}} btn btn-default">
 				{{>chartRow}}
 			</label>
 		{{/if}}
