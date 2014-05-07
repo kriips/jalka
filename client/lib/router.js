@@ -102,7 +102,6 @@ Router.map(function() {
 				this.render('accessDenied');
 				pause();
 			}
-			Session.set('addingResult', true);
 		},
 		waitOn: function() {
 			this.subscribe('userStatus');
