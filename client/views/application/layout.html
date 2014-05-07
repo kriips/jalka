@@ -12,7 +12,9 @@
 		<div class="navbar-collapse collapse navbar-inverse-collapse">
 			{{> yield region="header"}}
 			<ul class="nav navbar-nav navbar-right">
-				{{> loginButtons align="right"}}
+				<li style="color: white; padding-top: 12px; padding-right: 30px;">
+					{{activeUsername}}
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -34,6 +36,7 @@
 				</div>
 				<div class="modal-body">
 					<p>Ennustatud!</p>
+					<p>Ennustust saad muuta kuni esimese mängu alguseni</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -8,7 +8,39 @@ Router.map(function() {
 	this.route('home', {
 		path: '/',
 		onBeforeAction: function () {
-			this.redirect('/comp/mm2014')
+			if (Meteor.user()) {
+				this.redirect('/comp/mm2014');
+			}
+			else{
+				this.render('accessDenied');
+			}
+		}
+	});
+	this.route('token', {
+		path: '/token/:token',
+		where: 'client',
+		onBeforeAction: function(pause) {
+			console.log('client side route hit');
+			if (!this.params.token) {
+				this.render('accessDenied');
+				pause();
+			}
+			else {
+				Meteor.call('tokenLogin', this.params.token, function (err, result) {
+					console.log(arguments);
+					if (err) {
+						Router.render('accessDenied');
+						pause();
+					}
+					else {
+						Meteor.loginWithPassword(result, result.replace(' ', ''), function(err) {
+							Router.go('/comp/mm2014');
+						});
+					}
+				});
+				this.render('loadingTemp');
+				pause();
+			}
 		}
 	});
 
@@ -16,10 +48,7 @@ Router.map(function() {
 		path: '/comp/:url/addResult',
 		onBeforeAction: function(pause) {
 			if (!Meteor.user()) {
-				if (Meteor.loggingIn())
-					this.render(this.loadingTemplate);
-				else
-					this.render('accessDenied');
+				this.render('accessDenied');
 				pause();
 			}
 			else if (Meteor.user().username !== "Mikk Kard") {
@@ -68,6 +97,13 @@ Router.map(function() {
 		yieldTemplates: {
 			'header': {to: 'header'}
 		},
+		onBeforeAction: function(pause) {
+			if (!Meteor.user()) {
+				this.render('accessDenied');
+				pause();
+			}
+			Session.set('addingResult', true);
+		},
 		waitOn: function() {
 			this.subscribe('userStatus');
 			this.subscribe('allUsers');
@@ -102,15 +138,3 @@ Router.map(function() {
 		}
 	});
 });
-
-var requireLogin = function(pause) {
-	if (!Meteor.user()) {
-		if (Meteor.loggingIn())
-			this.render(this.loadingTemplate);
-		else
-			this.render('accessDenied');
-		pause();
-	}
-}
-
-Router.onBeforeAction(requireLogin);
