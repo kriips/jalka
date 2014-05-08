@@ -1,7 +1,7 @@
 Template.prediction.rendered = function() {
 	var action = Session.get('addingResult') ? 'Result' : 'Prediction';
 //	console.log(action);
-	$('.fixtures').on('change.fixtureRadios', 'input:radio', function(e){
+	$('.fixtures .btn-group').on('change.fixtureRadios', 'input:radio', function(e){
 		if (Meteor.user()) {
 			var radio = $(e.target);
 			if (radio.attr('name').indexOf('fixture') !== -1) {
@@ -30,7 +30,8 @@ Template.prediction.rendered = function() {
 		}
 	});
 
-	$('.playoffs').on('change', 'input:checkbox', function(e){
+	$(".playoffs .btn-group").on('change', 'input:checkbox', function(e){
+		e.stopImmediatePropagation();
 		if (Meteor.user()) {
 			var checkbox = $(e.target);
 			var checkboxLabel = checkbox.closest('label');
@@ -54,7 +55,6 @@ Template.prediction.rendered = function() {
 			if (!checkboxLabel.hasClass('active')) {
 				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url, userId: Meteor.user()._id});
 				if (predictions.count() >= countCheck[stage] && action !== 'Result') {
-					checkboxLabel.removeClass('active');
 					if (!stageContainer.hasClass("shake")) {
 						stageContainer.addClass("shake");
 					} else {
@@ -66,6 +66,7 @@ Template.prediction.rendered = function() {
 							stageContainer.css('-webkit-animation-name', 'shake');
 						}, 0);
 					}
+					checkboxLabel.removeClass('active');
 					return;
 				}
 				else {
