@@ -16,7 +16,6 @@
       "errors": {},
       "user-status": {},
       "font-awesome": {},
-      "loading": {},
       "iron-router": {},
       "chartjs": {}
     },
@@ -55,11 +54,6 @@
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.0.3",
         "commit": "61e9361384347547ae144f8228faa4deffda23db"
-      },
-      "loading": {
-        "git": "https://github.com/bitIO/meteor-loading.git",
-        "tag": "v0.0.1",
-        "commit": "48840a828a614e25d0e19c124494b16f255a902e"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
