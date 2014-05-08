@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da26dd8-e155-4583-a89b-71e09fd5ee0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/router.js" afterPath="$PROJECT_DIR$/client/lib/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/style.less" afterPath="$PROJECT_DIR$/client/stylesheets/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jalka.iws" />
@@ -28,28 +28,72 @@
       <file leaf-file-name="prediction.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/application/prediction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2280">
+            <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3135">
               <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2145">
+              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chart.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/chart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="1920">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2700">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="31" />
               <folding>
-                <element signature="e#217#799#0" expanded="true" />
-                <element signature="e#548#730#0" expanded="true" />
-                <element signature="e#1933#2004#0" expanded="true" />
-                <element signature="e#2177#2412#0" expanded="true" />
-                <element signature="e#4139#4818#0" expanded="true" />
+                <element signature="e#38#92#0" expanded="true" />
+                <element signature="e#134#208#0" expanded="true" />
+                <element signature="e#414#846#0" expanded="true" />
+                <element signature="e#613#733#0" expanded="true" />
+                <element signature="e#886#1390#0" expanded="true" />
+                <element signature="e#944#1231#0" expanded="true" />
+                <element signature="e#1260#1386#0" expanded="true" />
+                <element signature="e#1447#1533#0" expanded="true" />
+                <element signature="e#1593#1766#0" expanded="true" />
+                <element signature="e#1850#2260#0" expanded="true" />
+                <element signature="e#2349#2874#0" expanded="true" />
+                <element signature="e#2579#2846#0" expanded="true" />
+                <element signature="e#2693#2764#0" expanded="true" />
+                <element signature="e#2909#2965#0" expanded="true" />
+                <element signature="e#3001#3452#0" expanded="true" />
+                <element signature="e#3481#4645#0" expanded="true" />
+                <element signature="e#3922#4166#0" expanded="true" />
+                <element signature="e#4025#4156#0" expanded="true" />
+                <element signature="e#4373#4619#0" expanded="true" />
+                <element signature="e#4478#4609#0" expanded="true" />
+                <element signature="e#4677#4695#0" expanded="true" />
+                <element signature="e#4732#4884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/lib/router.js">
+      <file leaf-file-name="style.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25608656" vertical-offset="46" max-vertical-offset="1170">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding>
-                <element signature="e#798#841#0" expanded="true" />
-                <element signature="e#1527#1983#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.6052202" vertical-offset="259" max-vertical-offset="2685">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,7 +156,6 @@
         <option value="$PROJECT_DIR$/client/views/application/home.html" />
         <option value="$PROJECT_DIR$/client/views/application/chart.js" />
         <option value="$PROJECT_DIR$/server/fixtures.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/style.less" />
         <option value="$PROJECT_DIR$/client/views/application/chart.html" />
         <option value="$PROJECT_DIR$/server/router.js" />
         <option value="$PROJECT_DIR$/client/views/application/notFound.html" />
@@ -122,14 +165,15 @@
         <option value="$PROJECT_DIR$/client/views/application/layout.html" />
         <option value="$PROJECT_DIR$/client/views/application/prediction.js" />
         <option value="$PROJECT_DIR$/client/lib/router.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/style.less" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="2560" />
-    <option name="height" value="1414" />
+    <option name="width" value="1279" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -254,6 +298,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jalka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,33 +557,37 @@
       <created>1399533014838</created>
       <updated>1399533014838</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="integration">
+      <created>1399542257122</created>
+      <updated>1399542257122</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1414" extended-state="6" />
+    <frame x="0" y="22" width="1279" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17067833" sideWeight="0.58515626" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4109375" sideWeight="0.77315825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2556685" sideWeight="0.77315825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17067833" sideWeight="0.41484374" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1696751" sideWeight="0.41484374" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968637" sideWeight="0.49960908" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17067833" sideWeight="0.58515626" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.49960908" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -838,27 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="953" max-vertical-offset="2700">
-          <caret line="127" column="38" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40031397" vertical-offset="1740" max-vertical-offset="2670">
-          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/application/chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40031397" vertical-offset="210" max-vertical-offset="1920">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52006173" vertical-offset="3218" max-vertical-offset="18255">
@@ -920,24 +965,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2280">
           <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <element signature="e#217#799#0" expanded="true" />
-            <element signature="e#548#730#0" expanded="true" />
-            <element signature="e#1933#2004#0" expanded="true" />
-            <element signature="e#2177#2412#0" expanded="true" />
-            <element signature="e#4139#4818#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25608656" vertical-offset="46" max-vertical-offset="1170">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="1920">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2700">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#798#841#0" expanded="true" />
-            <element signature="e#1527#1983#0" expanded="true" />
+            <element signature="e#38#92#0" expanded="true" />
+            <element signature="e#134#208#0" expanded="true" />
+            <element signature="e#414#846#0" expanded="true" />
+            <element signature="e#613#733#0" expanded="true" />
+            <element signature="e#886#1390#0" expanded="true" />
+            <element signature="e#944#1231#0" expanded="true" />
+            <element signature="e#1260#1386#0" expanded="true" />
+            <element signature="e#1447#1533#0" expanded="true" />
+            <element signature="e#1593#1766#0" expanded="true" />
+            <element signature="e#1850#2260#0" expanded="true" />
+            <element signature="e#2349#2874#0" expanded="true" />
+            <element signature="e#2579#2846#0" expanded="true" />
+            <element signature="e#2693#2764#0" expanded="true" />
+            <element signature="e#2909#2965#0" expanded="true" />
+            <element signature="e#3001#3452#0" expanded="true" />
+            <element signature="e#3481#4645#0" expanded="true" />
+            <element signature="e#3922#4166#0" expanded="true" />
+            <element signature="e#4025#4156#0" expanded="true" />
+            <element signature="e#4373#4619#0" expanded="true" />
+            <element signature="e#4478#4609#0" expanded="true" />
+            <element signature="e#4677#4695#0" expanded="true" />
+            <element signature="e#4732#4884#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6052202" vertical-offset="259" max-vertical-offset="2685">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
