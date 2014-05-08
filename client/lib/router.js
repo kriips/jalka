@@ -27,7 +27,6 @@ Router.map(function() {
 			}
 			else {
 				Meteor.call('tokenLogin', this.params.token, function (err, result) {
-					console.log(arguments);
 					if (err) {
 						Router.render('accessDenied');
 						pause();
