@@ -2,6 +2,7 @@ Predictions = new Meteor.Collection('predictions');
 
 Meteor.methods({
 	addPrediction: function (predictionAttributes) {
+		console.log('adding prediction');
 		var user = Meteor.user();
 		if (!user)
 			throw new Meteor.Error(401, "You need to login to send a prediction");
@@ -71,6 +72,7 @@ Meteor.methods({
 		// check whether user is added to chart
 		var competition = Competitions.findOne({url: predictionAttributes.event});
 		// if the whole prediction is filled, add the user to the chart
+		console.log(Predictions.find({userId: Meteor.user()._id, event: predictionAttributes.event}).count());
 		if (Predictions.find({userId: Meteor.user()._id, event: predictionAttributes.event}).count() >= competition.maxPredictions) {
 			if (Competitions.find({url: predictionAttributes.event, "participants.userId": user._id}).count() == 0){
 				Competitions.update(competition._id, {$addToSet: {participants: {userId: user._id, username: user.username}}}, function() {

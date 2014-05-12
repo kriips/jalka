@@ -64,6 +64,9 @@ Template.user.helpers({
 Template.chart.helpers({
 	'resultsAdded': function () {
 		return Session.get('selectedCompetition').chart && Session.get('selectedCompetition').chart.group ? Session.get('selectedCompetition').chart.group.length > 0 : false;
+	},
+	'predictionsAdded': function () {
+		return Session.get('selectedCompetition').participants ? Session.get('selectedCompetition').participants.length > 0 : false;
 	}
 });
 
