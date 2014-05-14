@@ -20,7 +20,6 @@ Router.map(function() {
 		path: '/token/:token',
 		where: 'client',
 		onBeforeAction: function(pause) {
-			console.log('client side route hit');
 			if (!this.params.token) {
 				this.render('accessDenied');
 				pause();

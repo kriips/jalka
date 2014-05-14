@@ -1,3 +1,11 @@
+var countCheck = {
+	5: 16,
+	4: 8,
+	3: 4,
+	2: 2,
+	1: 1
+};
+
 Template.prediction.rendered = function() {
 	var action = Session.get('addingResult') ? 'Result' : 'Prediction';
 //	console.log(action);
@@ -36,14 +44,8 @@ Template.prediction.rendered = function() {
 			var checkbox = $(e.target);
 			var checkboxLabel = checkbox.closest('label');
 			var stageContainer = checkbox.closest('.btn-group');
-			var countCheck = {
-				5: 16,
-				4: 8,
-				3: 4,
-				2: 2,
-				1: 1
-			};
-			stage = stageContainer.attr('name');
+
+			var stage = stageContainer.attr('name');
 			stage = stage[stage.length-1] - 1;
 
 			var prediction = {
@@ -184,7 +186,14 @@ Template.predictionPlayoffs.helpers({
 				return 'active';
 			}
 			else {
-				return '';
+				// should there be more possibilities to check
+				var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url, userId: Meteor.user()._id});
+				if (predictions.count() >= countCheck[stage]) {
+					return 'disabled';
+				}
+				else {
+					return '';
+				}
 			}
 		}
 	},
@@ -201,3 +210,7 @@ Template.predictionPlayoffs.helpers({
 		return result;
 	}
 });
+
+isCheckedFunc = function (stage) {
+
+}

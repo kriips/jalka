@@ -44,7 +44,7 @@
 
 				<div class="btn-group btn-group-xs flagButtons" name="stage5" data-toggle="buttons">
 					{{#each playoffStage 5}}
-						<label class="btn btn-primary {{isChecked 4}}" style="margin-left:-1px;">
+						<label class="btn btn-primary {{isChecked 4}} {{isDisabled 4}}" style="margin-left:-1px;">
 							{{> playOff}}
 						</label>
 					{{/each}}
