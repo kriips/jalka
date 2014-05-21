@@ -22,7 +22,7 @@ Template.chart.created = function () {
 			if (!index) {
 				selectUser = user;
 			}
-			if (user.userId = Meteor.user()._id) {
+			if (user.userId == Meteor.user()._id) {
 				selectUser = user;
 			}
 		});
