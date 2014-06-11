@@ -51,6 +51,12 @@ Meteor.methods({
 				});
 			}
 		});
+	},
+	resetPasswords: function() {
+		Meteor.users.find().forEach(function(account) {
+			console.log(account);
+			Accounts.setPassword(account._id, account.username.replace(' ', ''));
+		});
 	}
 
 });
