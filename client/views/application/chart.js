@@ -35,9 +35,14 @@ Template.chart.created = function () {
 
 Template.chart.rendered = function () {
 	$('.results').on('change', 'input:radio', function (e) {
+		Session.set('chartLoading', true);
 		if (Meteor.user()) {
 			var radio = $(e.target);
 			if (radio.attr('name').indexOf('chart') !== -1) {
+				var competition = Session.get('selectedCompetition');
+				Meteor.subscribe('predictions', {event: competition.url, userId: radio.attr('userId')}, function () {
+					Session.set('chartLoading', false);
+				});
 				Session.set('chartSelectedUser', {
 					userId: radio.attr('userId'),
 					username: radio.attr('username')
@@ -67,6 +72,9 @@ Template.chart.helpers({
 	},
 	'predictionsAdded': function () {
 		return Session.get('selectedCompetition').participants ? Session.get('selectedCompetition').participants.length > 0 : false;
+	},
+	'chartLoading': function () {
+		return Session.get('chartLoading');
 	}
 });
 

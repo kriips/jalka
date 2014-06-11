@@ -134,11 +134,6 @@ Template.fixture.helpers({
 		}
 
 		return returnVal;
-	},
-
-	countPredictions: function(key) {
-		var predictions = Predictions.find({fixtureId: 'fixture_' + this.id, event: Session.get('selectedCompetition').url, prediction: key});
-		return predictions.count();
 	}
 });
 

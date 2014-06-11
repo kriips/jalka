@@ -28,6 +28,8 @@ Meteor.methods({
 				event: predictionAttributes.event
 			});
 			if (prediction) {
+				changeCount('subtract', predictionAttributes.event, prediction.prediction, prediction.fixtureId);
+				changeCount('add', predictionAttributes.event, predictionAttributes.result, prediction.fixtureId);
 				Predictions.update(prediction._id, {
 						$set: {
 							prediction: predictionAttributes.result
@@ -45,6 +47,7 @@ Meteor.methods({
 					},
 					function () {
 					});
+
 			}
 		}
 		else if (predictionType == 'playoff') {
@@ -103,3 +106,37 @@ Meteor.methods({
 	}
 
 });
+
+changeCount = function (operation, event, key, fixture) {
+	fixture = fixture.split('_');
+	var fixtureId = parseInt(fixture[1]);
+	var competition = Competitions.findOne({url: event});
+	competition.fixtures.forEach(function (fixture) {
+		if (fixture.id === fixtureId) {
+			if (key === 'draw') {
+				count = fixture.draw_count;
+				count = modifyCount(operation, count);
+				Competitions.update({url: event, 'fixtures.id':  fixtureId}, {$set: {"fixtures.$.draw_count": count}});
+			}
+			else if (fixture.team1_key == key) {
+				count = fixture.team1_count;
+				count = modifyCount(operation, count);
+				Competitions.update({url: event, 'fixtures.id':  fixtureId}, {$set: {"fixtures.$.team1_count": count}});
+			}
+			else if (fixture.team2_key == key) {
+				count = fixture.team2_count;
+				count = modifyCount(operation, count);
+				Competitions.update({url: event, 'fixtures.id':  fixtureId}, {$set: {"fixtures.$.team2_count": count}});
+			}
+		}
+	});
+}
+
+modifyCount = function (operation, count) {
+	if (operation == 'subtract') {
+		return count - 1;
+	}
+	else if (operation == 'add') {
+		return count + 1;
+	}
+}

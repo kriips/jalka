@@ -18,7 +18,12 @@ Meteor.publish('competition', function(options) {
 
 Meteor.publish('predictions', function(options) {
 	console.log('publishing predictions');
-	return Predictions.find({event : options.event});
+	if (options.userId) {
+		return Predictions.find({event : options.event, userId: options.userId});
+	}
+	else {
+		return Predictions.find({event : options.event});
+	}
 });
 
 Meteor.publish('userStatus', function() {

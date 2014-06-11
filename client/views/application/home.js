@@ -4,7 +4,12 @@ Template.home.events({
 Template.home.helpers({
 	activeTab: function(name) {
 		if (name == 'predict') {
-			return Session.get('selectedCompetition').isPredictable ? 'active' : 'disabled';
+			if (Session.get('selectedCompetition').isPredictable) {
+				return name == Session.get('selectedTab') ? 'active' : '';
+			}
+			else {
+				return 'disabled';
+			}
 		}
 		else {
 			return name == Session.get('selectedTab') ? 'active' : '';
@@ -22,6 +27,8 @@ Template.home.helpers({
 });
 
 Template.home.rendered = function () {
+	var competition = Session.get('selectedCompetition');
+	Meteor.subscribe('predictions', {event: competition.url, userId: Meteor.user()._id})
 	$(".nav-tabs a[data-toggle=tab]").on("click", function(e) {
 		if ($(this).hasClass("disabled")) {
 			e.preventDefault();

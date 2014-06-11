@@ -10,20 +10,20 @@
 			</h4>
 		</div>
 	</div>
-	<div class="col-md-9">
-		{{#if resultsAdded}}
-			<div class="clearfix" style="padding-bottom: 20px;">
-				<div class="vertical-text chartYLabel clearfix">Koht</div>
-				<div class="canvas">
-					<canvas height=300 width=540 id="userChart"></canvas>
+		<div class="col-md-9" style="{{#if chartLoading}}opacity: 0.5;{{/if}}">
+			{{#if resultsAdded}}
+				<div class="clearfix" style="padding-bottom: 20px;">
+					<div class="vertical-text chartYLabel clearfix">Koht</div>
+					<div class="canvas">
+						<canvas height=300 width=540 id="userChart"></canvas>
+					</div>
+					<div style="position:relative; float:left; left: 230px;">Mäng/playoffi faas</div>
 				</div>
-				<div style="position:relative; float:left; left: 230px;">Mäng/playoffi faas</div>
-			</div>
-		{{/if}}
-		{{#if predictionsAdded}}
-			{{> chartPredictions}}
-		{{/if}}
-	</div>
+			{{/if}}
+			{{#if predictionsAdded}}
+				{{> chartPredictions}}
+			{{/if}}
+		</div>
 </template>
 
 <template name="user">
@@ -122,4 +122,18 @@
 		</span>
 	</td>
 
+</template>
+
+<template name="loading2">
+	<!-- Loading animation container -->
+	<div class="loading2">
+		<!-- We make this div spin -->
+		<div class="spinner">
+			<!-- Mask of the quarter of circle -->
+			<div class="mask">
+				<!-- Inner masked circle -->
+				<div class="maskedCircle"></div>
+			</div>
+		</div>
+	</div>
 </template>

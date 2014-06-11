@@ -29,6 +29,28 @@ Meteor.methods({
 			}
 
 		}
+	},
+	recalculatePredictionCounts: function() {
+		var competitions = Competitions.find();
+		competitions.forEach(function (competition) {
+			if (competition.fixtures) {
+				competition.fixtures.forEach(function (fixture) {
+					var predictions1 = Predictions.find({fixtureId: 'fixture_' + fixture.id, event: competition.url, prediction: fixture.team1_key});
+					fixture.team1_count = predictions1.count();
+					var predictions2 = Predictions.find({fixtureId: 'fixture_' + fixture.id, event: competition.url, prediction: fixture.team2_key});
+					fixture.team2_count = predictions2.count();
+					var draws = Predictions.find({fixtureId: 'fixture_' + fixture.id, event: competition.url, prediction: 'draw'});
+					fixture.draw_count = draws.count();
+					console.log(fixture);
+					Competitions.update(
+						{_id: competition._id, "fixtures.id": parseInt(fixture.id)},
+						{$set: {"fixtures.$": fixture}}
+						, function (error, docs) {
+							console.log(docs);
+						});
+				});
+			}
+		});
 	}
 
 });
