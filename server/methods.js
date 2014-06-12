@@ -57,6 +57,9 @@ Meteor.methods({
 			console.log(account);
 			Accounts.setPassword(account._id, account.username.replace(' ', ''));
 		});
+	},
+	togglePredicting: function (url) {
+		Competitions.update({url: url}, {$set: {isPredictable: false}});
 	}
 
 });
