@@ -26,7 +26,9 @@ Template.prediction.rendered = function() {
 							Errors.throw(error.reason);
 						}
 						else {
+							console.log(result);
 							if (result && result.message && result.message == 'predictionCompleted') {
+								$('#predictionDone').modal('show');
 							}
 						}
 					}
@@ -80,6 +82,7 @@ Template.prediction.rendered = function() {
 								Errors.throw(error.reason);
 							}
 							else {
+								console.log(result);
 								if (result && result.message && result.message == 'predictionCompleted') {
 									$('#predictionDone').modal('show');
 								}
