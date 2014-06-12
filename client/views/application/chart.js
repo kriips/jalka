@@ -123,7 +123,7 @@ renderChart = function (data) {
 		var userChart = new Chart(ctx).Line(getChartData(), {
 			scaleOverride: true,
 			scaleSteps: Session.get('selectedCompetition').participants.length + 1,
-			scaleStepWidth: 5,
+			scaleStepWidth: 1,
 			scaleStartValue: 0,
 			bezierCurve: false
 		});

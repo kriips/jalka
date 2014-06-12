@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.44954127" vertical-offset="1679" max-vertical-offset="2865">
-              <caret line="125" column="26" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
+              <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="26" />
               <folding>
                 <element signature="e#38#92#0" expanded="true" />
                 <element signature="e#134#208#0" expanded="true" />
@@ -646,7 +646,11 @@
       <created>1402603375970</created>
       <updated>1402603375970</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="scale step">
+      <created>1402611479679</created>
+      <updated>1402611479679</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -692,7 +696,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="debuggin iron router" />
     <MESSAGE value="iron router debugged" />
     <MESSAGE value="messing with tabs" />
     <MESSAGE value="styling correction" />
@@ -717,7 +720,8 @@
     <MESSAGE value="count fix" />
     <MESSAGE value="disabling predicting" />
     <MESSAGE value="plus 3 hours" />
-    <option name="LAST_COMMIT_MESSAGE" value="plus 3 hours" />
+    <MESSAGE value="scale step" />
+    <option name="LAST_COMMIT_MESSAGE" value="scale step" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1093,7 +1097,7 @@
     <entry file="file://$PROJECT_DIR$/client/views/application/chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44954127" vertical-offset="1679" max-vertical-offset="2865">
-          <caret line="125" column="26" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
+          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="26" />
           <folding>
             <element signature="e#38#92#0" expanded="true" />
             <element signature="e#134#208#0" expanded="true" />
