@@ -122,8 +122,8 @@ renderChart = function (data) {
 		var ctx = chartSelector.getContext("2d");
 		var userChart = new Chart(ctx).Line(getChartData(), {
 			scaleOverride: true,
-			scaleSteps: Session.get('selectedCompetition').participants.length + 1,
-			scaleStepWidth: 1,
+			scaleSteps: (Session.get('selectedCompetition').participants.length + 1) / 5,
+			scaleStepWidth: 5,
 			scaleStartValue: 0,
 			bezierCurve: false
 		});
