@@ -27,9 +27,9 @@ Meteor.methods({
 				fixtureId: predictionAttributes.game,
 				event: predictionAttributes.event
 			});
+			changeCount('add', predictionAttributes.event, predictionAttributes.result, predictionAttributes.game);
 			if (prediction) {
 				changeCount('subtract', predictionAttributes.event, prediction.prediction, prediction.fixtureId);
-				changeCount('add', predictionAttributes.event, predictionAttributes.result, prediction.fixtureId);
 				Predictions.update(prediction._id, {
 						$set: {
 							prediction: predictionAttributes.result
