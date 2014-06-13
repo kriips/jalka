@@ -21,6 +21,10 @@ Meteor.publish('predictions', function(options) {
 	if (options.userId) {
 		return Predictions.find({event : options.event, userId: options.userId});
 	}
+	else if (options.fixture && options.key) {
+		console.log(Predictions.find({event : options.event, fixtureId: options.fixture, prediction: options.key}).count());
+		return Predictions.find({event : options.event, fixtureId: options.fixture, prediction: options.key});
+	}
 	else {
 		return Predictions.find({event : options.event});
 	}

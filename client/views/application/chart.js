@@ -35,14 +35,14 @@ Template.chart.created = function () {
 
 Template.chart.rendered = function () {
 	$('.results').on('change', 'input:radio', function (e) {
-		Session.set('chartLoading', true);
+//		Session.set('chartLoading', true);
 		if (Meteor.user()) {
 			var radio = $(e.target);
 			if (radio.attr('name').indexOf('chart') !== -1) {
 				var competition = Session.get('selectedCompetition');
-				Meteor.subscribe('predictions', {event: competition.url, userId: radio.attr('userId')}, function () {
-					Session.set('chartLoading', false);
-				});
+//				Meteor.subscribe('predictions', {event: competition.url, userId: radio.attr('userId')}, function () {
+//					Session.set('chartLoading', false);
+//				});
 				Session.set('chartSelectedUser', {
 					userId: radio.attr('userId'),
 					username: radio.attr('username')
@@ -89,6 +89,35 @@ Template.chartPredictionRow.helpers({
 				return key == prediction.prediction ? 'lightGray' : '';
 			}
 		}
+	}
+});
+
+Template.chartPredictionRow.events({
+	'click .predictionButton': function (e) {
+		e.preventDefault();
+		var button = $(e.target);
+		var fixture = button.attr('fixture');
+		fixture = 'fixture_' + fixture;
+		var key = button.attr('key');
+		var competition = Session.get('selectedCompetition');
+		var namelist = new Array();
+		var predictions = Predictions.find({event : competition.url, fixtureId: fixture, prediction: key});
+		predictions.forEach(function(prediction) {
+			var user = Meteor.users.findOne({_id: prediction.userId});
+			namelist.push(user.username);
+		});
+		namelist = jQuery.unique(namelist);
+		var nameString = '';
+		namelist.forEach(function(name) {
+			nameString += '<p>' + name + '</p>';
+		});
+		button.popover({
+			html: true,
+			content: nameString,
+			container: 'body',
+			placement: 'auto'
+		});
+		button.popover('show');
 	}
 });
 

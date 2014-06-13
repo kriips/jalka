@@ -107,6 +107,7 @@ Router.map(function() {
 			var url = this.params.url;
 			return [
 				this.subscribe('competition', {url: url}),
+				this.subscribe('predictions', {event: url}),
 				this.subscribe('competitions')
 			];
 		},

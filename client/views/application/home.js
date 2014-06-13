@@ -28,7 +28,7 @@ Template.home.helpers({
 
 Template.home.rendered = function () {
 	var competition = Session.get('selectedCompetition');
-	Meteor.subscribe('predictions', {event: competition.url, userId: Meteor.user()._id})
+//	Meteor.subscribe('predictions', {event: competition.url, userId: Meteor.user()._id})
 	$(".nav-tabs a[data-toggle=tab]").on("click", function(e) {
 		if ($(this).hasClass("disabled")) {
 			e.preventDefault();

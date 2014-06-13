@@ -107,6 +107,7 @@
 
 <template name="chartPredictionRow">
 	<td class="third {{chartPredictionColor team1_key}}">
+		<button fixture="{{id}}" key="{{team1_key}}" style="margin-top:8px; float:left;" type="button" class="predictionButton btn btn-xs btn-default"><i class="fa fa-list-ul"></i> {{team1_count}}</button>
 		<span class="withFlag">
 			<img src="/img/flags/{{team1_key}}.png" />{{team1_title}}
 		</span>
@@ -115,8 +116,10 @@
 		<span>
 			Viik
 		</span>
+		<button fixture="{{id}}" key="draw" style="margin-left: 5px;" type="button" class="predictionButton btn btn-xs btn-default"><i class="fa fa-list-ul"></i> {{draw_count}}</button>
 	</td>
 	<td class="third {{chartPredictionColor team2_key}}">
+		<button fixture="{{id}}" key="{{team2_key}}" style="margin-top:8px;" type="button" class="predictionButton goRight btn btn-xs btn-default"><i class="fa fa-list-ul"></i> {{team2_count}}</button>
 		<span class="withFlag goRight">
 			{{team2_title}} <img src="/img/flags/{{team2_key}}.png" />
 		</span>
