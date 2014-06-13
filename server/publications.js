@@ -16,6 +16,11 @@ Meteor.publish('competition', function(options) {
 	return Competitions.find({url : options.url});
 });
 
+Meteor.publish('messages', function(options) {
+	console.log('publishing active competition messages');
+	return Messages.find({event : options.event});
+});
+
 Meteor.publish('predictions', function(options) {
 	console.log('publishing predictions');
 	if (options.userId) {

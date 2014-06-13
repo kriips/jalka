@@ -5,7 +5,7 @@ Template.messagesList.events({
 		if (Meteor.user()) {
 			var message = {
 				message: $('.messageForm').find('[name=message]').val(),
-				competition: Session.get('selectedCompetition')
+				competition: Session.get('selectedCompetition').url
 			}
 			Meteor.call(
 				'addMessage',
@@ -25,11 +25,14 @@ Template.messagesList.events({
 
 Template.messagesList.helpers({
 	sortMessages: function(messages) {
-		if (messages){
-			messages = _.sortBy(messages, function(message){
+		if (messages.count() > 0){
+			messages = _.sortBy(messages.fetch(), function(message){
 				return message.timestamp;
 			});
 			return messages.reverse();
 		}
+	},
+	messages: function() {
+		return Messages.find();
 	}
 });

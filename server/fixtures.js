@@ -2,7 +2,7 @@ Predictions._ensureIndex({event: 1}, {background: true});
 Predictions._ensureIndex({event: 1, fixtureId: 1, prediction: 1}, {background: true});
 Predictions._ensureIndex({event: 1, userId: 1}, {background: true});
 Competitions._ensureIndex({url:1}, {background: true});
-Competitions._ensureIndex({'messages.timestamp': 1}, {background: true});
+Messages._ensureIndex({timestamp: 1, event: 1}, {background: true});
 if (Competitions.find().count() === 0) {
 	console.log('inserting competitions');
 	Competitions.insert({
