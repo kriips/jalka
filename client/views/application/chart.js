@@ -115,7 +115,7 @@ Template.chartPredictionRow.events({
 			html: true,
 			content: nameString,
 			container: 'body',
-			placement: 'auto'
+			placement: 'bottom'
 		});
 		button.popover('show');
 	}
