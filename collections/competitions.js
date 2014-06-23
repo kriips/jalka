@@ -66,7 +66,7 @@ Meteor.methods({
 });
 
 refreshChart = function (competition) {
-	console.log('refreshing chart');
+	console.log('refreshing charts');
 	var chart = {};
 	chart.group = new Array();
 	chart.playoffs = new Array();
@@ -90,7 +90,6 @@ refreshChart = function (competition) {
 				if (!chart.group[fixture.id]) {
 					chart.group[fixture.id] = new Array();
 				}
-
 				score = {
 					userId: user.userId,
 					username: userName,
@@ -107,7 +106,7 @@ refreshChart = function (competition) {
 			if (stage.teams.length > 0) {
 				stage.teams.forEach(function (team) {
 					if (Predictions.findOne({userId: user.userId, event: competition.url, stage: stage.id, key: team.key})) {
-						runningScore += stage.points;
+						runningScore += stage.score;
 					}
 				})
 				if (!chart.playoffs[stage.id]) {
