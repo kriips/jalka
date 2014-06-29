@@ -119,7 +119,6 @@ Template.chartPredictionRow.events({
 
 Template.chartPredictionPORow.events({
 	'click .predictionButton': function (e) {
-		console.log('clicked');
 		e.preventDefault();
 		var button = $(e.target);
 		var stage = button.attr('stage');
@@ -127,15 +126,11 @@ Template.chartPredictionPORow.events({
 		var competition = Session.get('selectedCompetition');
 		var namelist = new Array();
 		var predictions = Predictions.find({event : competition.url, stage: parseInt(stage), key: key});
-		console.log(key);
-		console.log(stage);
-		console.log(predictions.count());
 		predictions.forEach(function(prediction) {
 			var user = Meteor.users.findOne({_id: prediction.userId});
 			namelist.push(user.username);
 		});
 		namelist = jQuery.unique(namelist);
-		console.log(namelist);
 		var nameString = '';
 		namelist.forEach(function(name) {
 			nameString += '<p>' + name + '</p>';
