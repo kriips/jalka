@@ -35,14 +35,10 @@ Template.chart.created = function () {
 
 Template.chart.rendered = function () {
 	$('.results').on('change', 'input:radio', function (e) {
-//		Session.set('chartLoading', true);
 		if (Meteor.user()) {
+			Session.set('chartLoading', true);
 			var radio = $(e.target);
 			if (radio.attr('name').indexOf('chart') !== -1) {
-				var competition = Session.get('selectedCompetition');
-//				Meteor.subscribe('predictions', {event: competition.url, userId: radio.attr('userId')}, function () {
-//					Session.set('chartLoading', false);
-//				});
 				Session.set('chartSelectedUser', {
 					userId: radio.attr('userId'),
 					username: radio.attr('username')
@@ -121,23 +117,72 @@ Template.chartPredictionRow.events({
 	}
 });
 
+Template.chartPredictionPORow.events({
+	'click .predictionButton': function (e) {
+		console.log('clicked');
+		e.preventDefault();
+		var button = $(e.target);
+		var stage = button.attr('stage');
+		var key = button.attr('key');
+		var competition = Session.get('selectedCompetition');
+		var namelist = new Array();
+		var predictions = Predictions.find({event : competition.url, stage: parseInt(stage), key: key});
+		console.log(key);
+		console.log(stage);
+		console.log(predictions.count());
+		predictions.forEach(function(prediction) {
+			var user = Meteor.users.findOne({_id: prediction.userId});
+			namelist.push(user.username);
+		});
+		namelist = jQuery.unique(namelist);
+		console.log(namelist);
+		var nameString = '';
+		namelist.forEach(function(name) {
+			nameString += '<p>' + name + '</p>';
+		});
+		button.popover({
+			html: true,
+			content: nameString,
+			container: 'body',
+			placement: 'bottom'
+		});
+		button.popover('show');
+	}
+});
+
 Template.chartPredictions.helpers({
 	'currentPlayoffPredictions': function (stage) {
-		var predictions = Predictions.find({userId: Session.get('chartSelectedUser').userId, stage: stage, event: Session.get('selectedCompetition').url});
+		var predictions = Predictions.find({stage: stage, event: Session.get('selectedCompetition').url});
 		var returnValues = new Array();
 		predictions.forEach(function (prediction) {
 			var success = false;
-			Session.get('selectedCompetition').playoffs[stage - 1].teams.forEach(function (team) {
-				if (team.key == prediction.key) {
-					success = true;
-				}
-			});
-			returnValues.push({
-				key: prediction.key,
-				success: success
-			});
+			var predicted = false;
+			var key = prediction.key;
+			if (!returnValues[key]) {
+				returnValues[key] = {};
+				returnValues[key].key = key;
+				returnValues[key].stage = stage;
+				returnValues[key].count = 1;
+			}
+			else {
+				returnValues[key].count = returnValues[key].count + 1;
+			}
+			if (prediction.userId == Session.get('chartSelectedUser').userId) {
+				predicted = true;
+				Session.get('selectedCompetition').playoffs[stage - 1].teams.forEach(function (team) {
+					if (team.key == prediction.key) {
+						success = true;
+					}
+				});
+				returnValues[key].success = success;
+				returnValues[key].predicted = predicted;
+			}
 		});
-		return returnValues;
+		var returnArr = new Array();
+		for (var items in returnValues){
+			returnArr.push( returnValues[items] );
+		}
+		return returnArr;
 	},
 	'selectedUsername': function () {
 		return Session.get('chartSelectedUser').username;
@@ -185,17 +230,21 @@ getChartData = function () {
 	}
 	if (Session.get('selectedCompetition').chart.playoffs) {
 		var stageLabels = ['', 'F', '1/2', '1/4', '1/8', '1/16'];
-		Session.get('selectedCompetition').chart.playoffs.forEach(function (game, index) {
+		for (var i = 5; i > 0; i--) {
+			var game = Session.get('selectedCompetition').chart.playoffs[i];
 			if (game !== null) {
-				chartData.labels.push(stageLabels[index]);
+				chartData.labels.push(stageLabels[i]);
 				game.forEach(function (row) {
 					if (row.userId === Session.get('chartSelectedUser').userId) {
 						chartData.datasets[0].data.push(row.place);
 					}
 				})
 			}
-		});
+		}
+//		Session.get('selectedCompetition').chart.playoffs.forEach(function (game, index) {
+//		});
 	}
+	Session.set('chartLoading', false);
 	return chartData;
 }
 

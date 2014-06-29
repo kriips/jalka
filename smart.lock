@@ -2,7 +2,7 @@
   "meteor": {
     "git": "https://github.com/meteor/meteor.git",
     "branch": "master",
-    "commit": "0787e2f5d8453ca7ef3df02b2ddc02878dfaa4cd"
+    "commit": "c5292257533fd899dde0d4f3849864d23090c26e"
   },
   "dependencies": {
     "basePackages": {
@@ -28,7 +28,7 @@
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
         "branch": "master",
-        "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
+        "commit": "7a69aaf0379727fcf0653de4af968f8c8b6f7595"
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
@@ -47,8 +47,8 @@
       },
       "user-status": {
         "git": "https://github.com/mizzao/meteor-user-status.git",
-        "tag": "v0.4.1",
-        "commit": "ccca026086e3aa6e44df066c9d5fe4bd412219fc"
+        "tag": "v0.5.0",
+        "commit": "6a096fd9f3a916887c92cb778040ce2f8a9cc554"
       },
       "font-awesome": {
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",

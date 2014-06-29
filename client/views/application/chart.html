@@ -66,31 +66,31 @@
 		<div class="panel-heading">Playoffide ennustus ({{selectedUsername}})</div>
 		<div class="panel-body">
 			<span class="label label-primary">Kaheksandikfinaalid</span>
-			<div style="margin-top:15px;">
+			<div class="clearfix" style="margin-top:15px;">
 				{{#each currentPlayoffPredictions 5}}
 					{{> chartPredictionPORow}}
 				{{/each}}
 			</div>
 			<span class="label label-primary">Veerandfinaalid</span>
-			<div style="margin-top:15px;">
+			<div class="clearfix" style="margin-top:15px;">
 				{{#each currentPlayoffPredictions 4}}
 					{{> chartPredictionPORow}}
 				{{/each}}
 			</div>
 			<span class="label label-primary">Poolfinaalid</span>
-			<div style="margin-top:15px;">
+			<div class="clearfix" style="margin-top:15px;">
 				{{#each currentPlayoffPredictions 3}}
 					{{> chartPredictionPORow}}
 				{{/each}}
 			</div>
 			<span class="label label-primary">Finaal</span>
-			<div style="margin-top:15px;">
+			<div class="clearfix" style="margin-top:15px;">
 				{{#each currentPlayoffPredictions 2}}
 					{{> chartPredictionPORow}}
 				{{/each}}
 			</div>
 			<span class="label label-primary">Võitja</span>
-			<div style="margin-top:15px;">
+			<div class="clearfix" style="margin-top:15px;">
 				{{#each currentPlayoffPredictions 1}}
 					{{> chartPredictionPORow}}
 				{{/each}}
@@ -100,9 +100,10 @@
 </template>
 
 <template name="chartPredictionPORow">
-	<span>
-		<img class="{{#if success}}lightGreen{{/if}}" src="/img/flags/{{key}}.png" />
-	</span>
+	<div class="chartPredictionPOSection">
+		<img class="chartPredictionPORow {{#if success}}lightGreen {{else}} {{#if predicted}}lightGray{{/if}}{{/if}}" src="/img/flags/{{key}}.png" />
+		<button stage="{{stage}}" key="{{key}}" style="margin-top:5px;" type="button" class="predictionButton btn btn-xs btn-default"><i class="fa fa-list-ul"></i> {{count}}</button>
+	</div>
 </template>
 
 <template name="chartPredictionRow">
