@@ -102,8 +102,9 @@ refreshChart = function (competition) {
 		})
 
 		// playoff scores
-		competition.playoffs.forEach(function (stage) {
-			if (stage.teams.length > 0) {
+		for (var i = 5; i > 0; i--) {
+			var stage = competition.playoffs[i];
+			if (stage && stage.teams.length > 0) {
 				stage.teams.forEach(function (team) {
 					if (Predictions.findOne({userId: user.userId, event: competition.url, stage: stage.id, key: team.key})) {
 						runningScore += stage.score;
@@ -120,9 +121,7 @@ refreshChart = function (competition) {
 				chart.playoffs[stage.id].push(score);
 				chart.latest[seq] = score;
 			}
-		})
-
-		seq++;
+		}
 	})
 	calculatePlaces(chart.group);
 	calculatePlaces(chart.playoffs);
