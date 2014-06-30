@@ -122,7 +122,8 @@ refreshChart = function (competition) {
 				chart.latest[seq] = score;
 			}
 		}
-	})
+		seq++;
+	});
 	calculatePlaces(chart.group);
 	calculatePlaces(chart.playoffs);
 	calculatePlaces([chart.latest]);

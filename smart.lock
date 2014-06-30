@@ -32,8 +32,8 @@
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.1.1-1",
-        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
@@ -67,8 +67,8 @@
       },
       "timesync": {
         "git": "https://github.com/mizzao/meteor-timesync.git",
-        "tag": "v0.1.6",
-        "commit": "83067433f511bc13a11ae8c87e9a4d331256915e"
+        "tag": "v0.2.0",
+        "commit": "55f1daf261996dfbd726253688cfe7a2cc169d9b"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
