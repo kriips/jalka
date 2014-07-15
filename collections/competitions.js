@@ -102,7 +102,7 @@ refreshChart = function (competition) {
 		})
 
 		// playoff scores
-		for (var i = 5; i > 0; i--) {
+		for (var i = 5; i >= 0; i--) {
 			var stage = competition.playoffs[i];
 			if (stage && stage.teams.length > 0) {
 				stage.teams.forEach(function (team) {
